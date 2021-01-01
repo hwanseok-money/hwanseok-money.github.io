@@ -1,19 +1,11 @@
 main:
-  - title: "Posts"
-    url: /posts/
+  - title: "Recent posts"
+    url: /
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "Sample Posts"
+  # - title: "About"
+  #   url: /about/
+  - title: "Year Archive"
     url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
-  - title: "page archive"
-    url: /page-archive/
-  - title: "post-archive-feature-rows"
-    url: /post-archive-feature-rows/

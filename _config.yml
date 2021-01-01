@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "HwanSeok-Dev Archive"
+title                    : "힘세다 아카이브HwanSeok-Dev Archive"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HwanSeok"
-description              : "HwanSeok-Dev Archive"
+description              : "(1) 힘이 많아서 억세다. (2) 힘이 많아 뻣뻣하고 굳다."
 url                      : "https://hwanseok-dev.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
 repository               : "hwanseok-dev/hwanseok-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "HwanSeok"
   avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hwanseok Jang. Greate honour to graduate from the Korea Aerospace Univ. Write Code. Solve Problem"
+  bio              : "Hwanseok Jang.  Greate honour to graduate from the Korea Aerospace Univ. Write Code. Solve Problem"
   location         : "South Korea/Seoul"
   email            : "hwanseok-dev@gmail.com"
   links:
@@ -280,3 +280,4 @@ defaults:
       comments: true
       share: true
       related: true
+      use_math: true
