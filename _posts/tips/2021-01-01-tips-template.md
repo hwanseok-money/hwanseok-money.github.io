@@ -1,11 +1,11 @@
 ---
-title: "tips template"
+title: "[Tips] Template 문서"
 excerpt: ""
 date: 2021-01-01
 categories:
-  - tips
+  - Tips
 tags:
-  - tips
+  - Tips
   - 
 toc : true
 toc_label: "Table of contents"

@@ -1,13 +1,14 @@
 ---
-title: "boj template"
+title: "[BOJ] Template 문서"
 excerpt: ""
 date: 2021-01-01
+last_modified_at: 
 categories:
-  - algorithm
+  - Algorithm
 tags:
-  - algorithm
-  - practice
-  - boj
+  - Algorithm
+  - Practice
+  - BOJ
   - "2839"
   - 설탕 배달
 toc : true

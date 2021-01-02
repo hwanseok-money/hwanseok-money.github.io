@@ -1,13 +1,14 @@
 ---
-title: "[백준]브3~실4/시리즈/피보나치 수"
+title: "[백준][브3-실4][시리즈] 피보나치 수"
 excerpt: ""
-date: 2021-01-02
+date: 2021-01-01
+last_modified_at : 2021-01-02
 categories:
-  - algorithm
+  - Algorithm
 tags:
-  - algorithm
-  - practice
-  - boj
+  - Algorithm
+  - Practice
+  - Boj
   - "2747"
   - "10870"
   - "2748"
@@ -204,28 +205,42 @@ int main(void) {
 }
 ```
 
-## 다섯 번째 풀이 : 행렬의 거듭제곱
-
-### 알고리즘
-
-[여기](https://m.blog.naver.com/jh05013/220999768783)에 큰 수의 피보나치를 구하는 방법이 정리 되어 있습니다. F0은 0이고, F1은 1이니 행렬의 거듭제곱만 구할 수 있으면 됩니다. 
-
-### 정답 코드
-
-이 문제는 지금의 저에게 너무 어려워서 풀지 않겠습니다.
-
-## 여섯 번째 풀이 : 피사노 주기
+## 다섯 번째 풀이 : 피사노 주기
 
 ### 알고리즘
 
 [여기](https://www.acmicpc.net/blog/view/28)에 피사노 주기에 대한 설명이 나와있습니다.
 
+주기의 길이가 P 이면, `N번째 피보나치 수를 M으로 나눈 나머지`는 `N%P번째 피보나치 수를 M을 나눈 나머지`와 같습니다. 즉, 0 ~ p-1번째 까지의 피보나치 수만 구하면 됩니다.  
+
+M = 10^k일 때, k>2라면 주기 p는 항상 15 * 10^{k-1}입니다.  
+
+[피보나치 수5/골2](boj.kr/2749) 문제에서 mod를 1,000,000을 사용하기 때문에 k는 6입니다. 따라서 주기는 15 * 10^5입니다.  
+
+
 ### 정답 코드
 
-이 문제는 지금의 저에게 너무 어려워서 풀지 않겠습니다.
+```cpp
+#include <iostream>
+using namespace std;
+const int mod = 1e6; // mod = 1,000,000 , k = 6
+const int p = mod/10*15; // P = 15 * 10^{k-1}
+int fibo[p] = {0,1};
+int main() {
+    long long n;
+    cin >> n;
+    for (int i=2; i<p; i++) {
+        fibo[i] = fibo[i-1] + fibo[i-2];
+        fibo[i] %= mod; // 피보나치 수를 M을 나눈 나머지
+    }
+    cout << fibo[n%p] << '\n'; // N%P번째 피보나치 수를 M을 나눈 나머지
+    return 0;
+}
+```
 
 ## 결론
 
-**Success Notice:** 
+**Success Notice:**  
+피보나치 수를 구하는 여러 방법을 알아보았습니다. 
 {: .notice--success}
  

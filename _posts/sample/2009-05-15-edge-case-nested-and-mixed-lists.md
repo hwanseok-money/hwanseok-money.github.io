@@ -61,7 +61,9 @@ Nested and mixed lists are an interesting beast. It's a corner case to make sure
 
 ### Task Lists
 
-- [x] Finish my changes
+:+1:
+
+- :heavy_check_mark: Finish my changes
 - [ ] Push my commits to GitHub
 - [ ] Open a pull request
   - [ ] Follow discussions
