@@ -1,5 +1,5 @@
 ---
-title: "[백준][브3-실4][시리즈] 피보나치 수"
+title: "[BOJ][DP][브3-골2][시리즈] 피보나치 수"
 excerpt: ""
 date: 2021-01-01
 last_modified_at : 2021-01-02
@@ -8,7 +8,9 @@ categories:
 tags:
   - Algorithm
   - Practice
-  - Boj
+  - Dynamic Programming
+  - DP
+  - BOJ
   - "2747"
   - "10870"
   - "2748"
@@ -19,21 +21,6 @@ toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
-
-```
-**Info Notice:**  
-피보나치 수를 구하는 여러 가지 방법을 알아보겠습니다. 아래 문제 링크의 순서대로 난이도가 높습니다. 
-{: .notice--info}
-
-**Warning Notice:**
-{: .notice--warning}
-
-**Danger Notice:**
-{: .notice--danger}
-
-**Success Notice:**
-{: .notice--success}
-```
 
 ## 문제 링크
 

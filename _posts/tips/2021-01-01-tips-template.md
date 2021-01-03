@@ -20,10 +20,9 @@ toc_sticky: true
 
 ## 커멘드
 
+tabs와 space는 모두 Indentation입니다.
+
 **Success Notice:**  
-1. tabs와 space는 모두 Indentation입니다.
-2. 명령 팔레트 열기 : ctrl + shift + p
-3-1. tabs -> spaces 변환 :Convert Indentation to tabs
-4-1. spaces -> tabs 변환 :Convert Indentation to spaces
+ctrl + shift + p > `Convert Indentation to tabs` or `Convert Indentation to spaces`
 {: .notice--success}
  
