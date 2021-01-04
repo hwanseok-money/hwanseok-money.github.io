@@ -1,7 +1,7 @@
 ---
-title: "[Tips] 나누기 연산자 우선순위"
+title: "[Tips] (a-1)%b+1 사용하기"
 excerpt: ""
-date: 2021-01-03
+date: 2021-01-04
 categories:
   - Tips
 tags:
@@ -39,8 +39,12 @@ toc_sticky: true
 | 11 | 3 | 2   | 2         | 4         |
 | 12 | 3 | 0   | 3         | 4         |
 
-**Success Notice:**  
-+,-보다 * /가 연산자 우선순위가 높습니다.  
-%는 *와 /와 연산자 우선순이가 같습니다.  
+아래와 같은 문제에서 사용될 수 있습니다.  
+
+- [ACM호텔](https://hwanseok-dev.github.io/algorithm/boj-impl-10250/)
+- [분산처리](https://hwanseok-dev.github.io/algorithm/boj-impl-1009/)
+
+**Success Notice:**
+수고하셨습니다. :+1:
 {: .notice--success}
  
