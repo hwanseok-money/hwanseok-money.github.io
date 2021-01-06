@@ -327,6 +327,8 @@ int main()
 
 ### 개선된 풀이
 
+개선된 풀이 1은 실행시간 170ms로 통과, 개선된 풀이 2는 139ms로 통과했습니다.  
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -374,9 +376,12 @@ int main()
 
 ### 개선된 풀이 2
 
+개선된 풀이 1은 실행시간 170ms로 통과, 개선된 풀이 2는 139ms로 통과했습니다.  
+
 각 인덱스에서 시작했을 때 얻을 수 있는 최대 점수를 구하는 과정을 반복하지 않는 방법입니다. 각 인덱스에서 바로 다음 인덱스에 대한 dp[i+v[i]]만 갱신합니다.  
 
 최대 값을 구하기 위해서는 어땠든 모든 jump는 확인되어야 하기 때문에 이 방법으로도 정답이 구해집니다. 물론 각 인덱스에 대해서 바로 다음만 신경쓰기 때문에 코드가 간결합니다. 그리고 다음 jump가 범위를 벗어날 때만 최대값을 갱신해주면 됩니다.  
+
 
 ```cpp
 #include <bits/stdc++.h>
@@ -416,6 +421,206 @@ int main()
 ```
 
 ## D. Even-Odd Game
+
+### 알고리즘  
+
+sample input의 두 번째 케이스가 Tie가 나온는 이유를 파악해야 합니다. 3 2 1이 주어졌을 때 A는 3을 가져갑니다. 2를 가져가서 자신이 2점을 얻는 것보다 B가 3점을 얻지 못하도록 하는 것이 더 이득이기 때문입니다. 마찬가지로 B는 2점을, A는 1점을 가져가서 둘 다 0점으로 Tie 게임이 됩니다.  
+
+이처럼 가장 큰 값을 가져가되, 자신의 점수에 포한된는지 여부를 따지면 됩니다.  
+
+### 시간 초과 풀이
+
+아래는 alice와 bob의 vector를 구분했습니다. 구분하지 않고 진행해도 됩니다. 남아있는 값 중에서 가장 큰 값을 빼야하는 점은 처음부터 끝까지 유지되니까요. 이렇게되면 문제의 정의상 priority_queue를 사용하는 것이 자료구조 선택에 최적임을 알 수 있습니다.  
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	int tc = 0; cin >> tc;
+	while (tc--) {
+		int n = 0;
+		cin >> n;
+		ll temp;
+		vector<ll> alice;
+		vector<ll> bob;
+		ll sum_a = 0, sum_b = 0;
+		for (int i = 0; i < n; i++) {
+			cin >> temp;
+			if (temp % 2 == 0) {
+				alice.push_back(temp);
+			}
+			else {
+				bob.push_back(temp);
+			}
+		}
+		sort(alice.begin(), alice.end(), std::greater<int>());
+		sort(bob.begin(), bob.end(), std::greater<int>());
+		
+		for (int i = 0; i < n; i++) {
+			ll top = 0;
+			if (!alice.empty() && !bob.empty()) {
+				if (alice[0] > bob[0]) {
+					top = alice[0];
+					alice.erase(alice.begin());
+				}
+				else {
+					top = bob[0];
+					bob.erase(bob.begin());
+				}
+			}
+			else if (!alice.empty()) {
+				top = alice[0];
+				alice.erase(alice.begin());
+			}
+			else if (!bob.empty()) {
+				top = bob[0];
+				bob.erase(bob.begin());
+			}
+			if (i % 2 == 0 && top % 2 == 0) {
+				sum_a += top;
+			}
+			else if (i % 2 == 1 && top % 2 == 1) {
+				sum_b += top;
+			}
+		}
+		if (sum_a > sum_b) cout << "Alice\n";
+		else if (sum_a < sum_b) cout << "Bob\n";
+		else cout << "Tie\n";
+	}
+	return 0;
+}
+```
+
+### 개선된 풀이 
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	int tc = 0; cin >> tc;
+	while (tc--) {
+		int n = 0;
+		cin >> n;
+		ll temp;
+		priority_queue<ll, vector<ll>> pq;
+		ll sum_a = 0, sum_b = 0;
+		for (int i = 0; i < n; i++) {
+			cin >> temp;
+			pq.push(temp);
+		}
+		for (int i = 0; i < n; i++) {
+			ll top = pq.top();
+			pq.pop();
+			if (i % 2 == 0 && top % 2 == 0) {
+				sum_a += top;
+			}
+			else if (i % 2 == 1 && top % 2 == 1) {
+				sum_b += top;
+			}
+		}
+		if (sum_a > sum_b) cout << "Alice\n";
+		else if (sum_a < sum_b) cout << "Bob\n";
+		else cout << "Tie\n";
+	}
+	return 0;
+}
+```
+
+### 더 개선된 풀이
+
+생각을 해보니 값을 pop()하지 않아도 됩니다.  
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+ 
+typedef long long ll;
+ 
+int main()
+{
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	int t; cin >> t;
+	while (t--){
+		int n; cin >> n;
+		vector<ll>v(n);
+		for (int i = 0; i < n; i++) cin >> v[i];
+		sort(v.begin(), v.end(), greater<int>());
+ 
+		ll sum1 = 0, sum2 = 0;
+		for (int i = 0; i < n; i++) {
+			if (i % 2 == 0 && v[i] % 2 == 0) sum1 += v[i];
+			else if (i % 2 == 1 && v[i] % 2 == 1) sum2 += v[i];
+		}
+		if (sum1 > sum2) cout << "Alice\n";
+		else if (sum1 < sum2) cout << "Bob\n";
+		else cout << "Tie\n";
+	}
+	return 0;
+}
+```
+
 ## E. Correct Placement
+
+### 알고리즘
+
+기본적으로는 모든 쌍을 확인하면서 조건을 만족하는지 확인하면 됩니다. 다만, 완전탐색으로 진행하면 $4 * 10^10$으로 4초의 시간제한을 초과합니다. 따라서 정렬을 해서 비교를 덜 할 수 있는 방법을 찾는 것이 핵심입니다.  
+
+
+
+### 시간제한 풀이
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	int tc = 0; cin >> tc;
+	while (tc--) {
+		int n = 0;
+		cin >> n;
+		vector<pair<int, int> > v(n);
+		for (int i = 0; i < n; i++) {
+			cin >> v[i].first >> v[i].second;
+		}
+		for (int i = 0; i < n; i++) {
+			bool flag = false;
+			for (int j = 0; j < n; j++) {
+				if (i == j) continue;
+				if ((v[j].first < v[i].first && v[j].second < v[i].second) ||
+					(v[j].second < v[i].first && v[j].first < v[i].second)) {
+					cout << j+1 << " ";
+					flag = true;
+					break;
+				}
+			}
+			if (!flag) {
+				cout << -1 << " ";
+			}
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+```
+
+### 개선된 풀이 
+
 ## F. New Year's Puzzle
+
+풀지 못했습니다. :worried: 
+ 
 ## G. Moving to the Capital
+
+풀지 못했습니다. :worried: 
+
