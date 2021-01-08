@@ -4,9 +4,9 @@ excerpt: ""
 date: 2021-01-01
 last_modified_at : 2021-01-02
 categories:
-  - Algorithm
+  - Algorithm-Practice
 tags:
-  - Algorithm
+  - Algorithm-Practice
   - Practice
   - Dynamic Programming
   - DP

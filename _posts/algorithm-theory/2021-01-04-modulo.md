@@ -4,9 +4,9 @@ excerpt: ""
 date: 2021-01-04
 last_modified_at: 
 categories:
-  - Algorithm
+  - Algorithm-Theory
 tags:
-  - Algorithm
+  - Algorithm-Theory
   - Theory
   - Modulo
   - MOD
