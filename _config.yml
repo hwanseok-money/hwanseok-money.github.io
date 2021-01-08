@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "힘세다 아카이브HwanSeok-Dev Archive"
+title                    : "I am a Dev Jaws"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HwanSeok"
-description              : "(1) 힘이 많아서 억세다. (2) 힘이 많아 뻣뻣하고 굳다."
+description              : "나는 데브 죠습니다"
 url                      : "https://hwanseok-dev.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
 repository               : "hwanseok-dev/hwanseok-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "air" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -208,7 +208,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 10 # amount of posts to show
+paginate: 10\\ # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
