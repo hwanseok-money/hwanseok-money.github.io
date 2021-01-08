@@ -1,7 +1,8 @@
 ---
-title: "[PS][완전탐색][N자리 K진수] Chapter 2"
+title: "[이론][완전탐색][N자리 K진수] Chapter 2"
 excerpt: "N자리 K진수 또 다른 접근 방법, 고른다/안고른다"
 date: 2020-03-22
+last_modified_at: 2021-01-08
 categories:
   - Algorithm-Theory
 tags:
@@ -10,7 +11,7 @@ tags:
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_sticky: false
 ---
 
 완전탐색의 첫 번째 알고리즘 백트래킹입니다. 백트래킹의 두 번째 유형인 '고른다/안고른다'를 학습합니다. 

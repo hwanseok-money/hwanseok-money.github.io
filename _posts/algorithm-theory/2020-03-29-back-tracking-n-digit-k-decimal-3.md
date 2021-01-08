@@ -1,7 +1,8 @@
 ---
-title: "[PS][완전탐색][N자리 K진수] Chapter 3"
+title: "[이론][완전탐색][N자리 K진수] Chapter 3"
 excerpt: "N자리 K진수 문제에 적용하기"
 date: 2020-03-29
+last_modified_at: 2021-01-08
 categories:
   - Algorithm-Theory
 tags:
@@ -10,7 +11,7 @@ tags:
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_sticky: false
 ---
 
 완전탐색의 첫 번째 알고리즘 백트래킹 문제를 풀어보겠습니다.   

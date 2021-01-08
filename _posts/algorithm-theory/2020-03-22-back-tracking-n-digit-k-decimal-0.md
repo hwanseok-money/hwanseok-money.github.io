@@ -1,16 +1,34 @@
 ---
-title: "[PS][완전탐색][N자리 K진수] Chapter 0"
+title: "[이론][완전탐색][N자리 K진수] Chapter 0"
 excerpt: "N자리 K진수 개념 이해하기"
 date: 2020-03-22
+last_modified_at: 2021-01-08
 categories:
   - Algorithm-Theory
 tags:
   - Algorithm-Theory 
   - back-tracking
+  - N과 M (1)
+  - N과 M (2)
+  - N과 M (3)
+  - N과 M (4)
+  - N과 M (5)
+  - N과 M (6)
+  - N과 M (7)
+  - N과 M (8)
+  - "15649"
+  - "15650"
+  - "15651"
+  - "15652"
+  - "15653"
+  - "15654"
+  - "15655"
+  - "15656"
+  - "15657"
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_sticky: false
 ---
 
 완전탐색의 첫 번째 알고리즘 백트래킹입니다. 백트래킹의 첫 번째 유형인 N자리 K진수에 대해서 학습합니다.
@@ -118,7 +136,41 @@ N자리 K진수를 연습하는 대표적인 문제로는 [N과M](https://www.ac
 1. 각 수열은 공백으로 구분해서 출력한다.
 1. 사전 순으로 증가하는 순서로 출력한다. 
 
-3번 문제의 코드는 [여기](https://gist.github.com/niklasjang/7a05fb4ff5be248ebd145bd8f5c4bc90)에 있습니다.  
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 1; i <= k; i++) {
+		arr[depth] = i;
+		recur(depth + 1);
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0);
+
+	return 0;
+}
+```  
 
 ### N과 M (1)
 
@@ -132,7 +184,45 @@ N자리 K진수를 연습하는 대표적인 문제로는 [N과M](https://www.ac
 
 같은 수를 여러 번 고르지 않게 하기 위해서는 bool 타입의 visited 배열을 사용하는 것이 가장 편리합니다.  
 
-1번 문제의 코드는 [여기](https://gist.github.com/niklasjang/fdf53e26b64594cca15b878370916ee9)에 있습니다.  
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 1; i <= k; i++) {
+		if (visited[i]) continue;
+		arr[depth] = i;
+		visited[i] = true;
+		recur(depth + 1);
+		visited[i] = false;
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0);
+
+	return 0;
+}
+```
 
 if(!visited[i])를 사용하는 것은 조건문을 통해서 실행되면 안되는 경우를 먼저 처리하기 위해서입니다. 그리고 recur(depth+1)를 호출한 뒤에 visited[i] = false;로 바꿔주는 부분을 주의해서 기억합니다.  
 
@@ -146,11 +236,88 @@ if(!visited[i])를 사용하는 것은 조건문을 통해서 실행되면 안�
 1. 각 수열은 공백으로 구분해서 출력한다.
 1. 사전 순으로 증가하는 순서로 출력한다. 
 
-2번 문제의 코드는 [여기](https://gist.github.com/niklasjang/50013629c03ea86cbd070e135f2a379a)에 있습니다.  
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 1; i <= k; i++) {
+		if (depth > 0 && arr[depth - 1] >= i) continue;
+		arr[depth] = i;
+		visited[i] = true;
+		recur(depth + 1);
+		visited[i] = false;
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0);
+
+	return 0;
+}
+```  
 
 위 방법은 1번째 이상의 index에 대해서 조건문을 통해서 문제의 조건을 만족하는 방법입니다. 이전 인덱스보다 큰 값만 배열에 저장될 수 있도록 하는 것입니다.  
 
-2번 문제에서 recur()의 param을 2개로 늘려서 푸는 방법은 [여기](https://gist.github.com/niklasjang/601c51561f4fe1753767c5ee422bd321)에 있습니다.  
+2번 문제에서 recur()의 param을 2개로 늘려서 푸는 방법은 다음과 같습니다.  
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth, int start) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = start; i <= k; i++) {
+		arr[depth] = i;
+		visited[i] = true;
+		recur(depth + 1, i + 1);
+		visited[i] = false;
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0, 1);
+
+	return 0;
+}
+```
 
 위 방법은 start를 인자로 넘겨서 각 자리의 숫자라 start~k-1까지 저장될 수 있도록 합니다. 이 문제를 풀 때는 먼저 설명한 방법이 직관적일 수 있으나 문제 풀이의 방법 넓히는 것에 목적이 있습니다.  
 
@@ -166,7 +333,42 @@ if(!visited[i])를 사용하는 것은 조건문을 통해서 실행되면 안�
 
 이 방법은 2번 문제의 코드에서 한 가지만 변형하면 풀 수 있습니다. ~~recur(depth+1, i+1);~~ -> recur(depth+1, i);  
 
-이 문제의 코드는 [여기](https://gist.github.com/niklasjang/2e1b4c3e66d4828f4f2e2af7a336098e)에 있습니다.  
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth, int start) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << arr[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = start; i <= k; i++) {
+		arr[depth] = i;
+		recur(depth + 1, i);
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0, 1);
+
+	return 0;
+}
+```  
 
 ### N과 M (7)
 
@@ -180,12 +382,185 @@ if(!visited[i])를 사용하는 것은 조건문을 통해서 실행되면 안�
 
 입력으로 주어지는 값들을 배열에 저장하고 sort()를 사용해서 오름차순으로 정렬한 뒤 사용하면 됩니다.  
 
-이 문제의 코드는 [여기](https://gist.github.com/niklasjang/5bcc97fe2a1ba1b41dd1f14c2e4ba1ba)에 있습니다. 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+int v[100];
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << v[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 0; i < k; i++) {
+		v[depth] = arr[i];
+		recur(depth + 1);
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	for (int i = 0; i < k; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + k);
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0);
+
+	return 0;
+}
+```
+
+5,6,8번 문제도 7번 문제와 같이 앞서 풀이한 문제를 변형하여 N자리 K진수의 방법으로 해결할 수 있습니다.  
 
 ### N과 M (5)
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+int v[100];
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << v[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 0; i < k; i++) {
+		if (visited[i]) continue;
+		v[depth] = arr[i];
+		visited[i] = true;
+		recur(depth + 1);
+		visited[i] = false;
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	for (int i = 0; i < k; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + k);
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0);
+
+	return 0;
+}
+```
+
 ### N과 M (6)
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+int v[100];
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth, int start) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << v[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = start; i < k; i++) {
+		v[depth] = arr[i];
+		recur(depth + 1, i + 1);
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	for (int i = 0; i < k; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + k);
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0, 0);
+
+	return 0;
+}
+```
+
 ### N과 M (8)
 
-5,6,8번 문제도 7번 문제와 같이 앞서 풀이한 문제를 변형하여 N자리 K진수의 방법으로 해결할 수 있습니다. 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int n = 0, k = 0; //N:배열의 길이 , K: 진수
+int arr[100]; //숫자가 저장될 배열
+int v[100];
+bool visited[100];
+
+/*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
+void recur(int depth, int start) {
+	if (depth == n) {
+		for (int i = 0; i < n; i++) {
+			cout << v[i] << " ";
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = start; i < k; i++) {
+		v[depth] = arr[i];
+		recur(depth + 1, i);
+	}
+}
+
+int main()
+{
+	//freopen("input.txt", "r", stdin);
+	ios_base::sync_with_stdio(0); cin.tie(0);
+	cin >> k >> n;
+	for (int i = 0; i < k; i++) {
+		cin >> arr[i];
+	}
+	sort(arr, arr + k);
+	//배열의 0번쨰 index부터 채우기 시작해야한다.
+	recur(0, 0);
+
+	return 0;
+}
+```
+
+
 
 

@@ -1,16 +1,19 @@
 ---
-title: "[PS][완전탐색][N자리 K진수] Chapter 1"
+title: "[이론][완전탐색][N자리 K진수] Chapter 1"
 excerpt: "N자리 K진수 문제에 적용하기"
 date: 2020-03-22
+last_modified_at: 2021-01-08
 categories:
   - Algorithm-Theory
 tags:
   - Algorithm-Theory 
   - back-tracking
+  - "2033"
+  - 신기한 소수
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_sticky: false
 ---
 
 완전탐색의 첫 번째 알고리즘 백트래킹입니다. 백트래킹의 첫 번째 유형인 N자리 K진수를 문제에 적용해보겠습니다.  
