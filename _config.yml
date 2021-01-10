@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "저는 데브 죠습니다I am a Dev Jaws"
+title                    : "HwanSeok's Archive"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HwanSeok"
@@ -25,7 +25,7 @@ url                      : "https://hwanseok-dev.github.io" # the base hostname 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
 repository               : "hwanseok-dev/hwanseok-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/devjaws-icon-96X96.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/hwanseok-icon-120X120.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
