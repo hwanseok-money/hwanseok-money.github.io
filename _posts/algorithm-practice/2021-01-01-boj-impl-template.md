@@ -21,7 +21,7 @@ toc_sticky: true
 
 ## 문제 링크
 
-[문제링크](boj.kr/1550)  
+[문제링크](https://www.acmicpc.net/problem/1550)  
 
 ## 첫 번째 풀이
 

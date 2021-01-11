@@ -24,11 +24,11 @@ toc_sticky: true
 
 ## 문제 링크
 
-[피보나치 수/브3](boj.kr/2747)  
-[피보나치 수5/브2](boj.kr/10870)  
-[피보나치 수2/실5](boj.kr/2748)  
-[피보나치 수4/실4](boj.kr/10826)  
-[피보나치 수5/골2](boj.kr/2749)  
+[피보나치 수/브3](https://www.acmicpc.net/problem/2747)  
+[피보나치 수5/브2](https://www.acmicpc.net/problem/10870)  
+[피보나치 수2/실5](https://www.acmicpc.net/problem/2748)  
+[피보나치 수4/실4](https://www.acmicpc.net/problem/10826)  
+[피보나치 수5/골2](https://www.acmicpc.net/problem/2749)  
 
 ## 첫 번째 풀이 : 배열에 저장
 
