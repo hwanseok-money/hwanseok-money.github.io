@@ -289,6 +289,12 @@ Azure는 전 세계에 위치한 데이터 센터로 구성됩니다. 지역이�
 
 # 맺음말
 
+추가적인 자료는 아래에서 확인가능합니다.  
+
+- <https://docs.microsoft.com/ko-kr/learn/paths/azure-fundamentals/>
+
+- <https://docs.microsoft.com/ko-kr/learn/modules/create-an-azure-account/>
+
 # Reference
 
 - Microsoft Azure Virtual Training Day: Fundamentals 1일차
