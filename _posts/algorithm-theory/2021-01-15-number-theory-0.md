@@ -72,20 +72,20 @@ int n, m;
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> n;
-	int temp = n;
-	for (int i = 2; i*i <= n; i++) {
-		while (temp % i == 0) {
-			temp /= i;
-			cout << i << "\n";
-		}
-	}
-	if (temp != 1) {
-		cout << temp;
-	}
-	return 0;
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> n;
+    int temp = n;
+    for (int i = 2; i*i <= n; i++) {
+        while (temp % i == 0) {
+            temp /= i;
+            cout << i << "\n";
+        }
+    }
+    if (temp != 1) {
+        cout << temp;
+    }
+    return 0;
 }
 
 ```
@@ -129,24 +129,24 @@ const int MAX = 1000001;
 ll n, m;
 
 ll count(ll a, ll b) {
-	ll mod = b;
-	ll ans = 0;
-	while (a >= mod) {
-		ans += a / mod;
-		mod *= b;
-	}
-	return ans;
+    ll mod = b;
+    ll ans = 0;
+    while (a >= mod) {
+        ans += a / mod;
+        mod *= b;
+    }
+    return ans;
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> n >> m;
-	ll a = count(n, 2) - count(n - m, 2) - count(m, 2);
-	ll b = count(n, 5) - count(n - m, 5) - count(m, 5);
-	cout << min(a, b);
-	return 0;
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> n >> m;
+    ll a = count(n, 2) - count(n - m, 2) - count(m, 2);
+    ll b = count(n, 5) - count(n - m, 5) - count(m, 5);
+    cout << min(a, b);
+    return 0;
 }
 
 ```
@@ -176,26 +176,46 @@ int n = 0;
 bool isPrime[10000001];
 
 int main(void) {
-	memset(isPrime, true, sizeof(isPrime));
-	isPrime[1] = false;
-	for (int curr = 2; curr * curr <= 10000000; curr++) {
-		if (isPrime[curr]) {
-			for (int next = curr * curr; next <= 10000000; next += curr) {
-				isPrime[next] = false;
-			}
-		}
-	}
-	cin >> n;
-	int ans = 0;
-	for (int i = 2; i <= 10000000; i++) {
-		if (isPrime[i]) {
-			ans++;
-			if (ans == n) {
-				cout << i << "\n";
-			}
-		}
-	}
-	return 0;
+    memset(isPrime, true, sizeof(isPrime));
+    isPrime[1] = false;
+    // 10000000까지 소수인지 아닌지 판단
+    for (int curr = 2; curr * curr <= 10000000; curr++) { // curr : 10000000의 약수 후보
+        if (isPrime[curr]) {
+            for (int next = curr * curr; next <= 10000000; next += curr) {
+                isPrime[next] = false;
+            }
+        }
+    }
+    cin >> n;
+    int ans = 0;
+    for (int i = 2; i <= 10000000; i++) {
+        if (isPrime[i]) {
+            ans++;
+            if (ans == n) {
+                cout << i << "\n";
+            }
+        }
+    }
+    return 0;
+}
+```
+
+## 분할정복 a^b % p
+
+### 알고리즘 
+
+```cpp
+ll ans, p;
+ll recur(int a, int b) { // 분할정복! a^b % p 구하기
+    ll ret;
+    if (b == 0) return 1;
+
+    ret = recur(a, b / 2);
+    ret *= ret;
+    ret %= p;
+
+    if (b % 2 == 0) return ret; // 3^16 = 3^8 * 3^8
+    else return (ret * a) % p; // 3^17 = 3^8 * 3^8 * 3
 }
 ```
 
