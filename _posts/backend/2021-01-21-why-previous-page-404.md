@@ -1,5 +1,5 @@
 ---
-title: "[Back-end] 뒤로가기 버튼 클릭시 만료된 페이지가 뜨는 원인"
+title: "[Backend] 뒤로가기 버튼 클릭시 만료된 페이지가 뜨는 원인"
 excerpt: "GET방식과 POST 방식의 차이"
 date: 2021-01-21
 last_modified_at: 2021-01-25 

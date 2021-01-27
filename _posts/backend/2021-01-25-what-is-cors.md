@@ -1,5 +1,5 @@
 ---
-title: "[Back-end] CORS(Cross-Origin Resource Sharing)"
+title: "[Backend] CORS(Cross-Origin Resource Sharing)"
 excerpt: "API 요청이 forbidden되는 이유"
 date: 2021-01-25
 last_modified_at: 2021-01-25 

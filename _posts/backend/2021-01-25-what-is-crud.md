@@ -1,5 +1,5 @@
 ---
-title: "[Back-end] CRUD(Create Read Update Delete)"
+title: "[Backend] CRUD(Create Read Update Delete)"
 excerpt: "Django의 CRUD를 중심으로"
 date: 2021-01-25
 last_modified_at: 2021-01-25 
