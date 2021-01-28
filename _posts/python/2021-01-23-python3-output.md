@@ -1,27 +1,20 @@
 ---
-title: "[Python] IO "
-excerpt: ""
+title: "[Python] 다양한 출력 방법"
+excerpt: "print의 형식 지정 세 가지 방법"
 date: 2021-01-23
-last_modified_at:
+last_modified_at: 2021-01-28
 categories:
   - Python
 tags:
   - Python
   - IO
   - FastIO
+  - C++
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
-
-# Input
-
-1. `input()` : 개행문자 제외 문자열 리턴
-1. `sys.stdin.readline()` : 개행문자 포함 문자열 리턴('\n' 또는 EOF까지)
-1. `sys.stdin.readline(N)` : 개행문자 포함 문자열 리턴(N문자 또는 '\n' 또는 EOF까지)
-1. `sys.stdin.read()` : 개행문자 포함 문자열 리턴(EOF까지)
-1. `sys.stdin.read(N)` : 개행문자 포함 문자열 리턴(N문자 또는 EOF까지)
 
 # Ouput
 
@@ -89,6 +82,10 @@ format = f'I am {s} and I like {n}'
 print(format)
 # I am hwanseok and I like 5
 ```
+
+# Reference
+
+- <https://docs.python.org/ko/3/howto/sorting.html>
 
 **Success Notice:**
 수고하셨습니다. :+1:

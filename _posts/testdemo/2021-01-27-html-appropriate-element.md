@@ -4,9 +4,9 @@ excerpt: ""
 date: 2021-01-27
 last_modified_at:
 categories:
-  - Algorithm-Practice
+  - TestDemo
 tags:
-  - Algorithm-Practice
+  - TestDemo
   - Practice
   - "7568"
   - 덩치
