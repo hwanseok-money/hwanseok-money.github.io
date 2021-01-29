@@ -37,32 +37,32 @@ using namespace std;
 int n = 0;
 
 bool isPrime(int num) {
-	if (num == 0) return true;
-	if (num == 1) return false;
-	int cnt = 0;
-	for (int i = 1; i * i <= num; i++) {
-		if (num % i == 0) cnt++;
-	}
-	return cnt == 1;
+  if (num == 0) return true;
+  if (num == 1) return false;
+  int cnt = 0;
+  for (int i = 1; i * i <= num; i++) {
+    if (num % i == 0) cnt++;
+  }
+  return cnt == 1;
 }
 
 void recur(int depth, int num) {
-	if (!isPrime(num)) return; //recur()의 초입 부분에 isPrime()을 적용한다. 
-	if(depth == n) {
-		cout << num << "\n";
-		return;
-	}
-	for (int i = 1; i <= 9; i++) {//2671처럼 6이 들어가지만 소수일 수 있습니다. 
-		recur(depth + 1, num * 10 + i);
-	}
+  if (!isPrime(num)) return; //recur()의 초입 부분에 isPrime()을 적용한다. 
+  if(depth == n) {
+    cout << num << "\n";
+    return;
+  }
+  for (int i = 1; i <= 9; i++) {//2671처럼 6이 들어가지만 소수일 수 있습니다. 
+    recur(depth + 1, num * 10 + i);
+  }
 }
 
 int main(void) {
-	cin.tie(NULL);
-	ios::sync_with_stdio("false");
-	cin >> n;
-	recur(0, 0);
-	return 0;
+  cin.tie(NULL);
+  ios::sync_with_stdio("false");
+  cin >> n;
+  recur(0, 0);
+  return 0;
 }
 ```
 

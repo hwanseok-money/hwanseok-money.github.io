@@ -37,25 +37,25 @@ using namespace std;
 typedef long long ll;
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
 
-	string s;
-	cin >> s;
-	ll ans = 0;
+    string s;
+    cin >> s;
+    ll ans = 0;
 
-	for (int i = s.size()-1; i>=0 ; --i) {
-		int coff = 0;
-		if ('A' <= s[i]) {
-			coff = s[i] - 'A' + 10;
-		}
-		else if ('0' <= s[i]) {
-			coff = s[i] - '0';
-		}
-		ans += coff * pow(16, s.size() - 1 - i);
-	}
-	cout << ans;
-	return 0;
+    for (int i = s.size()-1; i>=0 ; --i) {
+        int coff = 0;
+        if ('A' <= s[i]) {
+            coff = s[i] - 'A' + 10;
+        }
+        else if ('0' <= s[i]) {
+            coff = s[i] - '0';
+        }
+        ans += coff * pow(16, s.size() - 1 - i);
+    }
+    cout << ans;
+    return 0;
 }
 ```
 

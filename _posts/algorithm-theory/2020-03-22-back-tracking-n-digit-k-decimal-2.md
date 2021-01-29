@@ -69,13 +69,13 @@ int n = 0, k=0;
 int arr[20];
 
 void recur(int depth, int choice) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+  if (depth == n) {
+    for (int i = 0; i < n; i++) {
+      cout << arr[i] << " ";
+    }
+    cout << "\n";
+    return;
+  }
   
   if(choice == k+1) return;
   arr[depth] = choice;
@@ -83,11 +83,11 @@ void recur(int depth, int choice) {
   recur(depth, choice+1); //choice를 선택하지 않는다.
 }
 int main(void) {
-	cin.tie(NULL);
-	ios::sync_with_stdio("false");
-	cin >> n >> k;
-	recur(0,1);
-	return 0;
+  cin.tie(NULL);
+  ios::sync_with_stdio("false");
+  cin >> n >> k;
+  recur(0,1);
+  return 0;
 }
 ```
 

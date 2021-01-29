@@ -438,60 +438,60 @@ using namespace std;
 typedef long long ll;
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	int tc = 0; cin >> tc;
-	while (tc--) {
-		int n = 0;
-		cin >> n;
-		ll temp;
-		vector<ll> alice;
-		vector<ll> bob;
-		ll sum_a = 0, sum_b = 0;
-		for (int i = 0; i < n; i++) {
-			cin >> temp;
-			if (temp % 2 == 0) {
-				alice.push_back(temp);
-			}
-			else {
-				bob.push_back(temp);
-			}
-		}
-		sort(alice.begin(), alice.end(), std::greater<int>());
-		sort(bob.begin(), bob.end(), std::greater<int>());
-		
-		for (int i = 0; i < n; i++) {
-			ll top = 0;
-			if (!alice.empty() && !bob.empty()) {
-				if (alice[0] > bob[0]) {
-					top = alice[0];
-					alice.erase(alice.begin());
-				}
-				else {
-					top = bob[0];
-					bob.erase(bob.begin());
-				}
-			}
-			else if (!alice.empty()) {
-				top = alice[0];
-				alice.erase(alice.begin());
-			}
-			else if (!bob.empty()) {
-				top = bob[0];
-				bob.erase(bob.begin());
-			}
-			if (i % 2 == 0 && top % 2 == 0) {
-				sum_a += top;
-			}
-			else if (i % 2 == 1 && top % 2 == 1) {
-				sum_b += top;
-			}
-		}
-		if (sum_a > sum_b) cout << "Alice\n";
-		else if (sum_a < sum_b) cout << "Bob\n";
-		else cout << "Tie\n";
-	}
-	return 0;
+  //freopen("input.txt", "r", stdin);
+  ios_base::sync_with_stdio(0); cin.tie(0);
+  int tc = 0; cin >> tc;
+  while (tc--) {
+    int n = 0;
+    cin >> n;
+    ll temp;
+    vector<ll> alice;
+    vector<ll> bob;
+    ll sum_a = 0, sum_b = 0;
+    for (int i = 0; i < n; i++) {
+      cin >> temp;
+      if (temp % 2 == 0) {
+        alice.push_back(temp);
+      }
+      else {
+        bob.push_back(temp);
+      }
+    }
+    sort(alice.begin(), alice.end(), std::greater<int>());
+    sort(bob.begin(), bob.end(), std::greater<int>());
+    
+    for (int i = 0; i < n; i++) {
+      ll top = 0;
+      if (!alice.empty() && !bob.empty()) {
+        if (alice[0] > bob[0]) {
+          top = alice[0];
+          alice.erase(alice.begin());
+        }
+        else {
+          top = bob[0];
+          bob.erase(bob.begin());
+        }
+      }
+      else if (!alice.empty()) {
+        top = alice[0];
+        alice.erase(alice.begin());
+      }
+      else if (!bob.empty()) {
+        top = bob[0];
+        bob.erase(bob.begin());
+      }
+      if (i % 2 == 0 && top % 2 == 0) {
+        sum_a += top;
+      }
+      else if (i % 2 == 1 && top % 2 == 1) {
+        sum_b += top;
+      }
+    }
+    if (sum_a > sum_b) cout << "Alice\n";
+    else if (sum_a < sum_b) cout << "Bob\n";
+    else cout << "Tie\n";
+  }
+  return 0;
 }
 ```
 
@@ -503,34 +503,34 @@ using namespace std;
 typedef long long ll;
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	int tc = 0; cin >> tc;
-	while (tc--) {
-		int n = 0;
-		cin >> n;
-		ll temp;
-		priority_queue<ll, vector<ll>> pq;
-		ll sum_a = 0, sum_b = 0;
-		for (int i = 0; i < n; i++) {
-			cin >> temp;
-			pq.push(temp);
-		}
-		for (int i = 0; i < n; i++) {
-			ll top = pq.top();
-			pq.pop();
-			if (i % 2 == 0 && top % 2 == 0) {
-				sum_a += top;
-			}
-			else if (i % 2 == 1 && top % 2 == 1) {
-				sum_b += top;
-			}
-		}
-		if (sum_a > sum_b) cout << "Alice\n";
-		else if (sum_a < sum_b) cout << "Bob\n";
-		else cout << "Tie\n";
-	}
-	return 0;
+  //freopen("input.txt", "r", stdin);
+  ios_base::sync_with_stdio(0); cin.tie(0);
+  int tc = 0; cin >> tc;
+  while (tc--) {
+    int n = 0;
+    cin >> n;
+    ll temp;
+    priority_queue<ll, vector<ll>> pq;
+    ll sum_a = 0, sum_b = 0;
+    for (int i = 0; i < n; i++) {
+      cin >> temp;
+      pq.push(temp);
+    }
+    for (int i = 0; i < n; i++) {
+      ll top = pq.top();
+      pq.pop();
+      if (i % 2 == 0 && top % 2 == 0) {
+        sum_a += top;
+      }
+      else if (i % 2 == 1 && top % 2 == 1) {
+        sum_b += top;
+      }
+    }
+    if (sum_a > sum_b) cout << "Alice\n";
+    else if (sum_a < sum_b) cout << "Bob\n";
+    else cout << "Tie\n";
+  }
+  return 0;
 }
 ```
 
@@ -546,24 +546,24 @@ typedef long long ll;
  
 int main()
 {
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	int t; cin >> t;
-	while (t--){
-		int n; cin >> n;
-		vector<ll>v(n);
-		for (int i = 0; i < n; i++) cin >> v[i];
-		sort(v.begin(), v.end(), greater<int>());
+  ios_base::sync_with_stdio(0); cin.tie(0);
+  int t; cin >> t;
+  while (t--){
+    int n; cin >> n;
+    vector<ll>v(n);
+    for (int i = 0; i < n; i++) cin >> v[i];
+    sort(v.begin(), v.end(), greater<int>());
  
-		ll sum1 = 0, sum2 = 0;
-		for (int i = 0; i < n; i++) {
-			if (i % 2 == 0 && v[i] % 2 == 0) sum1 += v[i];
-			else if (i % 2 == 1 && v[i] % 2 == 1) sum2 += v[i];
-		}
-		if (sum1 > sum2) cout << "Alice\n";
-		else if (sum1 < sum2) cout << "Bob\n";
-		else cout << "Tie\n";
-	}
-	return 0;
+    ll sum1 = 0, sum2 = 0;
+    for (int i = 0; i < n; i++) {
+      if (i % 2 == 0 && v[i] % 2 == 0) sum1 += v[i];
+      else if (i % 2 == 1 && v[i] % 2 == 1) sum2 += v[i];
+    }
+    if (sum1 > sum2) cout << "Alice\n";
+    else if (sum1 < sum2) cout << "Bob\n";
+    else cout << "Tie\n";
+  }
+  return 0;
 }
 ```
 
@@ -583,34 +583,34 @@ using namespace std;
 typedef long long ll;
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	int tc = 0; cin >> tc;
-	while (tc--) {
-		int n = 0;
-		cin >> n;
-		vector<pair<int, int> > v(n);
-		for (int i = 0; i < n; i++) {
-			cin >> v[i].first >> v[i].second;
-		}
-		for (int i = 0; i < n; i++) {
-			bool flag = false;
-			for (int j = 0; j < n; j++) {
-				if (i == j) continue;
-				if ((v[j].first < v[i].first && v[j].second < v[i].second) ||
-					(v[j].second < v[i].first && v[j].first < v[i].second)) {
-					cout << j+1 << " ";
-					flag = true;
-					break;
-				}
-			}
-			if (!flag) {
-				cout << -1 << " ";
-			}
-		}
-		cout << "\n";
-	}
-	return 0;
+  //freopen("input.txt", "r", stdin);
+  ios_base::sync_with_stdio(0); cin.tie(0);
+  int tc = 0; cin >> tc;
+  while (tc--) {
+    int n = 0;
+    cin >> n;
+    vector<pair<int, int> > v(n);
+    for (int i = 0; i < n; i++) {
+      cin >> v[i].first >> v[i].second;
+    }
+    for (int i = 0; i < n; i++) {
+      bool flag = false;
+      for (int j = 0; j < n; j++) {
+        if (i == j) continue;
+        if ((v[j].first < v[i].first && v[j].second < v[i].second) ||
+          (v[j].second < v[i].first && v[j].first < v[i].second)) {
+          cout << j+1 << " ";
+          flag = true;
+          break;
+        }
+      }
+      if (!flag) {
+        cout << -1 << " ";
+      }
+    }
+    cout << "\n";
+  }
+  return 0;
 }
 ```
 

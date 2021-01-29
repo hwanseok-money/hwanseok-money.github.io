@@ -42,23 +42,23 @@ using namespace std;
 typedef long long ll;
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	int tc = 0; cin >> tc;
-	while (tc--) {
-		int n = 0; cin >> n;
-		if (n == 1)cout << "9\n";
-		else if (n == 2) cout << "98\n";
-		else if (n == 3) cout << "989\n";
-		else {
-			cout << "989";
-			for (int i = 0; i < n - 3; i++) {
-				cout << i % 10;
-			}
-			cout << "\n";
-		}
-	}
-	return 0;
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    int tc = 0; cin >> tc;
+    while (tc--) {
+        int n = 0; cin >> n;
+        if (n == 1)cout << "9\n";
+        else if (n == 2) cout << "98\n";
+        else if (n == 3) cout << "989\n";
+        else {
+            cout << "989";
+            for (int i = 0; i < n - 3; i++) {
+                cout << i % 10;
+            }
+            cout << "\n";
+        }
+    }
+    return 0;
 }
 ```
 
@@ -82,48 +82,48 @@ const int MAX = 200010;
 vector<int> v;
 vector<bool> sharp;
 bool isSharp(int i) {
-	if (i == 0 || i == n - 1) return false;
-	if ((v[i - 1] < v[i] && v[i] > v[i + 1]) ||
-		(v[i - 1] > v[i] && v[i] < v[i + 1])) return true;
-	return false;
+    if (i == 0 || i == n - 1) return false;
+    if ((v[i - 1] < v[i] && v[i] > v[i + 1]) ||
+        (v[i - 1] > v[i] && v[i] < v[i + 1])) return true;
+    return false;
 }
  
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-	int tc = 0; cin >> tc;
-	while (tc--) {
-		n = 0; cin >> n;
-		v = vector<int>(n, 0);
-		sharp = vector<bool>(n, false);
-		int a;
-		for (int i = 0; i < n; i++) {
-			cin >> v[i];
-		}
-		int ans = 0;
-		for (int i = 1; i < n - 1; i++) {
-			if (isSharp(i)) sharp[i] = true, ans++;
-		}
-		int diff = 0;
-		for (int i = 1; i < n - 1; i++) {
-			if (sharp[i]) {
-				int before = sharp[i - 1] + sharp[i] + sharp[i + 1];
-				int save = v[i];
-				v[i] = v[i - 1];
-				int after = isSharp(i - 1) + isSharp(i) + isSharp(i + 1);
-				// abs(before- after)이라고 하면 첨점이 더 생기는 경우를 찾지 못한다.
-				diff = max(diff, before - after);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    int tc = 0; cin >> tc;
+    while (tc--) {
+        n = 0; cin >> n;
+        v = vector<int>(n, 0);
+        sharp = vector<bool>(n, false);
+        int a;
+        for (int i = 0; i < n; i++) {
+            cin >> v[i];
+        }
+        int ans = 0;
+        for (int i = 1; i < n - 1; i++) {
+            if (isSharp(i)) sharp[i] = true, ans++;
+        }
+        int diff = 0;
+        for (int i = 1; i < n - 1; i++) {
+            if (sharp[i]) {
+                int before = sharp[i - 1] + sharp[i] + sharp[i + 1];
+                int save = v[i];
+                v[i] = v[i - 1];
+                int after = isSharp(i - 1) + isSharp(i) + isSharp(i + 1);
+                // abs(before- after)이라고 하면 첨점이 더 생기는 경우를 찾지 못한다.
+                diff = max(diff, before - after);
  
-				v[i] = v[i + 1];
-				after = isSharp(i - 1) + isSharp(i) + isSharp(i + 1);
-				diff = max(diff, before - after);
-				// 바꾸기 전 값으로 되돌려준다. 
-				v[i] = save;
-			}
-		}
-		cout << ans - diff << "\n";
-	}
-	return 0;
+                v[i] = v[i + 1];
+                after = isSharp(i - 1) + isSharp(i) + isSharp(i + 1);
+                diff = max(diff, before - after);
+                // 바꾸기 전 값으로 되돌려준다. 
+                v[i] = save;
+            }
+        }
+        cout << ans - diff << "\n";
+    }
+    return 0;
 }
 ```

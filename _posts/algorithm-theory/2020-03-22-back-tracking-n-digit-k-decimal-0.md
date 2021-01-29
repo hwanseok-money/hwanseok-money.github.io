@@ -79,29 +79,29 @@ int arr[100]; //숫자가 저장될 배열
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i];
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i];
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 0; i < k; i++) {
-		arr[depth] = i;
-		recur(depth + 1);
-	}
+    for (int i = 0; i < k; i++) {
+        arr[depth] = i;
+        recur(depth + 1);
+    }
 }
 
 int main()
 {
-	freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> n >> k;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> n >> k;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -146,29 +146,29 @@ int arr[100]; //숫자가 저장될 배열
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 1; i <= k; i++) {
-		arr[depth] = i;
-		recur(depth + 1);
-	}
+    for (int i = 1; i <= k; i++) {
+        arr[depth] = i;
+        recur(depth + 1);
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```  
 
@@ -195,32 +195,32 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 1; i <= k; i++) {
-		if (visited[i]) continue;
-		arr[depth] = i;
-		visited[i] = true;
-		recur(depth + 1);
-		visited[i] = false;
-	}
+    for (int i = 1; i <= k; i++) {
+        if (visited[i]) continue;
+        arr[depth] = i;
+        visited[i] = true;
+        recur(depth + 1);
+        visited[i] = false;
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -247,32 +247,32 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 1; i <= k; i++) {
-		if (depth > 0 && arr[depth - 1] >= i) continue;
-		arr[depth] = i;
-		visited[i] = true;
-		recur(depth + 1);
-		visited[i] = false;
-	}
+    for (int i = 1; i <= k; i++) {
+        if (depth > 0 && arr[depth - 1] >= i) continue;
+        arr[depth] = i;
+        visited[i] = true;
+        recur(depth + 1);
+        visited[i] = false;
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```  
 
@@ -291,31 +291,31 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth, int start) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = start; i <= k; i++) {
-		arr[depth] = i;
-		visited[i] = true;
-		recur(depth + 1, i + 1);
-		visited[i] = false;
-	}
+    for (int i = start; i <= k; i++) {
+        arr[depth] = i;
+        visited[i] = true;
+        recur(depth + 1, i + 1);
+        visited[i] = false;
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0, 1);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0, 1);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -344,29 +344,29 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth, int start) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << arr[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = start; i <= k; i++) {
-		arr[depth] = i;
-		recur(depth + 1, i);
-	}
+    for (int i = start; i <= k; i++) {
+        arr[depth] = i;
+        recur(depth + 1, i);
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0, 1);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0, 1);
 
-	return 0;
+    return 0;
 }
 ```  
 
@@ -394,33 +394,33 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << v[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << v[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 0; i < k; i++) {
-		v[depth] = arr[i];
-		recur(depth + 1);
-	}
+    for (int i = 0; i < k; i++) {
+        v[depth] = arr[i];
+        recur(depth + 1);
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	for (int i = 0; i < k; i++) {
-		cin >> arr[i];
-	}
-	sort(arr, arr + k);
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    for (int i = 0; i < k; i++) {
+        cin >> arr[i];
+    }
+    sort(arr, arr + k);
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -440,36 +440,36 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << v[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << v[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = 0; i < k; i++) {
-		if (visited[i]) continue;
-		v[depth] = arr[i];
-		visited[i] = true;
-		recur(depth + 1);
-		visited[i] = false;
-	}
+    for (int i = 0; i < k; i++) {
+        if (visited[i]) continue;
+        v[depth] = arr[i];
+        visited[i] = true;
+        recur(depth + 1);
+        visited[i] = false;
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	for (int i = 0; i < k; i++) {
-		cin >> arr[i];
-	}
-	sort(arr, arr + k);
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    for (int i = 0; i < k; i++) {
+        cin >> arr[i];
+    }
+    sort(arr, arr + k);
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -487,33 +487,33 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth, int start) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << v[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << v[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = start; i < k; i++) {
-		v[depth] = arr[i];
-		recur(depth + 1, i + 1);
-	}
+    for (int i = start; i < k; i++) {
+        v[depth] = arr[i];
+        recur(depth + 1, i + 1);
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	for (int i = 0; i < k; i++) {
-		cin >> arr[i];
-	}
-	sort(arr, arr + k);
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0, 0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    for (int i = 0; i < k; i++) {
+        cin >> arr[i];
+    }
+    sort(arr, arr + k);
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0, 0);
 
-	return 0;
+    return 0;
 }
 ```
 
@@ -531,33 +531,33 @@ bool visited[100];
 
 /*depth번째 index의 배열을 0부터 k-1까지 채운다. 0부터 n-1자리까지 모두 채워졌으면 출력한다.*/
 void recur(int depth, int start) {
-	if (depth == n) {
-		for (int i = 0; i < n; i++) {
-			cout << v[i] << " ";
-		}
-		cout << "\n";
-		return;
-	}
+    if (depth == n) {
+        for (int i = 0; i < n; i++) {
+            cout << v[i] << " ";
+        }
+        cout << "\n";
+        return;
+    }
 
-	for (int i = start; i < k; i++) {
-		v[depth] = arr[i];
-		recur(depth + 1, i);
-	}
+    for (int i = start; i < k; i++) {
+        v[depth] = arr[i];
+        recur(depth + 1, i);
+    }
 }
 
 int main()
 {
-	//freopen("input.txt", "r", stdin);
-	ios_base::sync_with_stdio(0); cin.tie(0);
-	cin >> k >> n;
-	for (int i = 0; i < k; i++) {
-		cin >> arr[i];
-	}
-	sort(arr, arr + k);
-	//배열의 0번쨰 index부터 채우기 시작해야한다.
-	recur(0, 0);
+    //freopen("input.txt", "r", stdin);
+    ios_base::sync_with_stdio(0); cin.tie(0);
+    cin >> k >> n;
+    for (int i = 0; i < k; i++) {
+        cin >> arr[i];
+    }
+    sort(arr, arr + k);
+    //배열의 0번쨰 index부터 채우기 시작해야한다.
+    recur(0, 0);
 
-	return 0;
+    return 0;
 }
 ```
 
