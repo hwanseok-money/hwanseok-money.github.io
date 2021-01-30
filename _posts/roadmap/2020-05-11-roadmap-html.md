@@ -3,9 +3,9 @@ title: "[Backend][RoadMap] Chap 1-1. Basic Frontend Knowledge - HTML"
 excerpt: "github.com/kamranahmedse/developer-roadmap"
 date: 2020-05-13
 categories:
-  - Backend
+  - RoadMap
 tags:
-  - Backend 
+  - RoadMap 
   - roadmap
 
 toc : true
@@ -46,7 +46,6 @@ classes: wide
 </ul>
 ```
 
-```html
 //전체 구조
 - html
   - head
@@ -54,7 +53,8 @@ classes: wide
     - meta
   - body
 
-//전체 구조 예시
+```html
+<!-- //전체 구조 예시 -->
 <!DOCTYPE html>
 <html>
   <head>

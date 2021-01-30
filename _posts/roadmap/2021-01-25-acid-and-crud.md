@@ -1,12 +1,12 @@
 ---
-title: "[Backend] ACID(Atomicity Consistency Isolation Durability)와 CRUD(Create Read Update Delete)"
-excerpt: "데이터베이스 기본"
+title: "[RoadMap] ACID(Atomicity Consistency Isolation Durability)와 CRUD(Create Read Update Delete)"
+excerpt: "github.com/kamranahmedse/developer-roadmap"
 date: 2021-01-25
 last_modified_at: 2021-01-25 
 categories:
-  - Backend
+  - RoadMap
 tags:
-  - Backend
+  - RoadMap 
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)

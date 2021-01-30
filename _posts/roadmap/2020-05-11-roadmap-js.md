@@ -3,9 +3,9 @@ title: "[Backend][RoadMap] Chap 1-3. Basic Frontend Knowledge - JavaScript"
 excerpt: "github.com/kamranahmedse/developer-roadmap"
 date: 2020-05-13
 categories:
-  - Backend
+  - RoadMap
 tags:
-  - Backend 
+  - RoadMap 
   - roadmap
 
 toc : true

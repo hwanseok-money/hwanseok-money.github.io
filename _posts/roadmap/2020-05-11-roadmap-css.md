@@ -3,10 +3,9 @@ title: "[Backend][RoadMap] Chap 1-2. Basic Frontend Knowledge - CSS"
 excerpt: "github.com/kamranahmedse/developer-roadmap"
 date: 2020-05-13
 categories:
-  - Backend
+  - RoadMap
 tags:
-  - Backend 
-  - roadmap
+  - RoadMap 
 
 toc : true
 toc_label: "=== Contents ==="
