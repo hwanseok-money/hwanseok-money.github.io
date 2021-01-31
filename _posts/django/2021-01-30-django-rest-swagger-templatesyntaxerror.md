@@ -39,7 +39,7 @@ tz
 
 `pip install django-rest-swagger`으로 설치한 라이브러리의 문제인데, **github가 read-only로 되어있어서 PR이 현재는 안되는 상황입니다.**
 
-제가 fork 하고 수정해놓은 내용인데 [hwanseok-dev/django-rest-swagger][2]를 보고 따라하시면 됩니다. 저는 `python -m venv theinsta`라는 명령어로 가상환경을 사용해서 을 했는데 위 파일이 다운로드 받아진 경로는 `\theinsta\Lib\site-packages\rest_framework_swagger\templates\rest_framework_swagger`여기 였습니다. 이 경로에 보시면 위 경로에서 수정된 파일이 있는데 똑같이 수정해주시면 됩니다.  
+제가 fork 하고 수정해놓은 내용인데 [hwanseok-dev/django-rest-swagger][2]를 보고 따라하시면 됩니다. 저는 `python -m venv theinsta`라는 명령어로 가상환경을 사용해서 `pip install django-rest-swagger`을 했는데 위 파일이 다운로드 받아진 경로는 `\theinsta\Lib\site-packages\rest_framework_swagger\templates\rest_framework_swagger`여기 였습니다. 이 경로에 보시면 위 경로에서 수정된 파일이 있는데 똑같이 수정해주시면 됩니다.  
 
 **Success Notice:**
 {: .notice--success}
