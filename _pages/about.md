@@ -22,7 +22,7 @@ toc_sticky: true
 4. 졸업 이후 Github : <https://github.com/hwanseok-dev>
 5. 졸업 이전 Github : <https://github.com/niklasjang>  
 
-![네이버 인턴 수료 증명서](/assets/images/about/네이버 인턴수행 증명서 장환석.pdf) 
+[네이버 인턴 수료 증명서](/assets/images/about/네이버 인턴수행 증명서 장환석.pdf) 
 
 ## [이해하고 기록하고 공유하는 공간, 블로그]
 1. 진행기간	: 2017-03-01 ~  현재
