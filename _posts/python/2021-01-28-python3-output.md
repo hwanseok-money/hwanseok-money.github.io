@@ -42,11 +42,11 @@ a is 2 and b is 1
 ```python
 # {} 출력하는 법
 print('How to print {}')
-print('How to print {{}}')
-print('How to print {{}} {}'.format('test'))
+print('How to print \{\{\}\}')
+print('How to print \{\{\}\} {}'.format('test'))
 '''
 How to print {}
-How to print {{}}
+How to print \{\{\}\}
 How to print {} test
 '''
 ```
