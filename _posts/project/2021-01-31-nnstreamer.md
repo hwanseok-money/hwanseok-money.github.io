@@ -1,5 +1,5 @@
 ---
-title: "[OpenSource] NNStreamer"
+title: "[오픈소스 컨트리뷰톤] NNStreamer"
 excerpt: "날짜 "
 date: 2021-01-30
 last_modified_at: 

@@ -20,7 +20,7 @@ title                    : "HwanSeok's Archive"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HwanSeok"
-description              : "Consistency makes genius."
+description              : "Consistency makes genius"
 url                      : "https://hwanseok-dev.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
 repository               : "hwanseok-dev/hwanseok-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

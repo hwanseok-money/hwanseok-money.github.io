@@ -30,7 +30,7 @@ toc_sticky: false
 | 생년월일 | 1995.12.26 | 
 | 이메일 | <mailto:hwanseok.dev@gmail.com> |
 | 병역 | [공군 병장 만기제대](/assets/images/about/certification_military_service.pdf)|
-| 웹 사이트 | [hwanseok-dev.github.io](https:/hwanseok-dev.github.io) |  
+| 웹 사이트 | [hwanseok-dev.github.io](https://hwanseok-dev.github.io) |  
 | Github | [hwanseok-dev](https://github.com/hwanseok-dev) |  
 
 # 학력
@@ -61,7 +61,6 @@ toc_sticky: false
 - 개발팀, 풀스텍 인턴
 - 콜라비 서비스 백오피스 고도화
 - java, spring-boot, mysql, mybatis, git, Mac OS
-- [인턴쉽 리뷰](https://hwanseok-dev.github.io/project/internship-collabee)
 - [인턴쉽 리뷰](/project/internship-collabee)
 - [인턴 수료 증명서](/assets/images/about/certification_internship_collabee.pdf)
 
