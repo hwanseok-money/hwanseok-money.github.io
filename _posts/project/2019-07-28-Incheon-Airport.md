@@ -13,7 +13,7 @@ toc_sticky: true
 classes: wide  
 ---
 
-# 요약
+## 요약
 - 2019.02.01. ~ 2019.02.28
 - 개인 프로젝트
 - 기여
@@ -22,8 +22,6 @@ classes: wide
 - MATLAB, Big Data analysis
 - [프로젝트 repository](https://github.com/hwanseok-dev/Incheon_airport_relocation)
 - [연구 참여 확인서](/assets/images/about/certification_research_participation.pdf)
-
----  
 
 ## 프로젝트 설명
 
@@ -53,9 +51,7 @@ classes: wide
 
 <https://github.com/niklasjang/Incheon_airport_relocation> 
 
-730개의 엑셀 파일에 나누어진 2800만개의 출입국기록 데이터들을 정리하는 역할을 하는 코드들입니다.
-
-~~(전체 파일 읽는데 시간 5시간 걸렸습니다.)~~
+730개의 엑셀 파일에 나누어진 2800만개의 출입국기록 데이터들을 정리하는 역할을 하는 코드들입니다.  
 
 ```txt
 textToData : 터미널의 각 일별 데이터를 항공사별 내국인/중국인/기타외국인의 수로 추리는 코드

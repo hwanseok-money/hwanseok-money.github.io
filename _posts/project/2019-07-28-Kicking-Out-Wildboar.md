@@ -15,7 +15,7 @@ toc_sticky: true
 classes: wide  
 ---
 
-### 요약
+## 요약
 - 2019.03.01. ~ 2019.06.30
 - 개인 프로젝트
 - 기여
@@ -23,8 +23,6 @@ classes: wide
 - python, simulation, modeling
 - [데모 영상](https://youtu.be/EXxjnZ303Zo)
 - [프로젝트 repository](https://github.com/hwanseok-dev/kicking_out_wildboar)
-
----  
 
 ## 프로젝트 설명 
 

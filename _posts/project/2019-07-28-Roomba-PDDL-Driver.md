@@ -16,7 +16,7 @@ toc_sticky: true
 classes: wide  
 ---
 
-### 요약
+## 요약
 - 2019.03.01. ~ 2019.06.30
 - 팀 프로젝트
 - 기여
@@ -25,13 +25,11 @@ classes: wide
 - [데모 영상](https://youtu.be/i-6bfpRTpEc)
 - [프로젝트 repository](https://github.com/hwanseok-dev/path_planning)
 
----  
-
 ## 프로젝트 설명
 
 [아마존 창고로봇](https://www.youtube.com/watch?v=Ox05Bks2Q3s) 영상을 보고 시작한 프로젝트입니다. 좁은 환경에서 다수의 로봇이 목적을 달성하기 위해 최적화된 움직임을 수행하것이 최종 목표입니다. 저를 포함한 6명의 팀원들을 A* 알고리즘과 PDDL 알고리즘을 사용해서 위 목표를 구현하였습니다. 
 
-## 워크플로우
+### 워크플로우
 
 ![CallBack-Thread-all](/assets/images/projects/roomba/CallBack-Thread-all.jpg)  
 

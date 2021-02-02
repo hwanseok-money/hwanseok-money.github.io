@@ -13,20 +13,19 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
-# 요약
+## 요약
 - 2020.09.06 ~ 2020.12.18
 - 개발팀, 풀스텍 인턴
 - 콜라비 서비스 백오피스 고도화
 - java, spring-boot, mysql, mybatis, git, Mac OS
 - [인턴 수료 증명서](/assets/images/about/certification_internship_collabee.pdf)
 
-# 직무  
+## 직무  
+콜라비팀 백오피스 서비스의 기능 개선 및 신규 기능 추가를 진행했습니다. 요구사항 수집, batabase 설계, rest api 설계 및 개발 그리고 frontend 화면 설계 및 개발까지 모두 진행했습니다.  
 
-콜라비 서비스의 백오피스 고도화를 위한 전반적인 업무를 진행했습니다. 요구사항 수집, batabase 설계, backend api 설계 및 개발 그리고 frontend 화면 설계 및 개발까지 모두 진행했습니다.  
+## 배운점  
 
-# 배운점
-
-## 다중 접속을 고려한 안전설계
+### 다중 접속을 고려한 안전설계  
 
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : 여러 사용자의 DB 관련 요청을 안전하게 수행하는 구조에 대해 고민해본 경험이 있습니다. 저는 사내 백오피스에서 '프리셋 데이터'의 CRUD 기능을 추가하기 위해 Database 설계, Backend API 개발 그리고 Frontend 화면 설계를 진행했었습니다. 그런데 여러 사용자의 요청이 동시에 이루어지는 경우, 같은 데이터가 중복되서 저장되는 문제와 저장된 데이터가 사라지는 문제가 발생했습니다.
@@ -36,7 +35,7 @@ toc_sticky: true
 6. 결과 : 여러 사용자가 동시에 프리셋 데이터의 CRUD 기능을 문제없이 사용할 수 있었습니다. 
 7. Skill 또는 지식 : React, Typescript, Spring Boot, Mybatis, MySQL
 
-## 누구나 이해할 수 있는 화면설계  
+### 누구나 이해할 수 있는 화면설계  
 
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : 수많은 버튼을 포함하는 페이지의 직관적인 화면 설계에 대해서 고민해본 경험이 있습니다. 제가 개발했던 사내 백오피스의 '프리셋 페이지'는 데이터의 CRUD 기능이 모두 포함된 페이지였습니다. 수 많은 버튼들이 각각의 CRUD 기능을 수행하고 있었고, 3개의 select box를 사용하여 데이터를 조회하는 등 화면구성이 복잡했습니다.     
@@ -46,7 +45,7 @@ toc_sticky: true
 6. 결과 : 개선 후에는 해당 페이지가 제공하는 다양한 기능을 어려움 없이 이용할 수 있었다는 피드백을 받았습니다.    
 7. Skill 또는 지식 : React, Typescript, Spring Boot, Mybatis, MySQL
 
-## 1+N Problem  
+### 1+N Problem  개선
 
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : Database의 1+N Problem을 해결했던 경험이 있습니다. Company Table에는 회사 정보가 저장되어 있었고, 각각의 company에 특정 Column을 추가해야하는 요구사항이 발생했습니다. 하지만 일부 company 정보에만 Column이 추가되기 때문에 기존의 Company Table을 수정하면 NULL 값이 많이 생기는 문제가 있었습니다. 그래서 저는 별도의 Company_info Table을 만들어서 필요한 정보를 저장했습니다. 그런데 Company Table과 Company_Info Table에 저장된 데이터를 종합해서 excel 파일로 export할 수 있는 기능을 개발했을 때, 응답시간이 비정상적으로 느린 문제를 발견했습니다.
@@ -56,7 +55,7 @@ toc_sticky: true
 6. 결과 : 1+N 번의 쿼리를 1+1번의 쿼리로 축소하여 excel download API의 수행속도를 5초에서 2초로 크게 줄일 수 있었습니다. 
 7. Skill 또는 지식 : Spring Boot, Mybatis, MySQL
 
-## 불필요하게 반복되는 쿼리  
+### 불필요하게 반복되는 쿼리 개선
 
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : on duplicate key update 구문을 사용해서 SQL query를 간소화한 경험이 있습니다. 다양한 API를 개발할 때 이미 저장된 데이터라면 Update를 수행하고, 아니라면 Insert를 수행하는 경우가 많았습니다.

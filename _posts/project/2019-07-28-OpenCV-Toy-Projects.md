@@ -15,7 +15,7 @@ toc_sticky: true
 classes: wide  
 ---
 
-### 요약
+## 요약
 - 2019.03.01. ~ 2019.06.30
 - 개인 프로젝트
 - 기여
@@ -25,12 +25,6 @@ classes: wide
 - [데모 영상(Obecjt-Tracking)](https://youtu.be/QpcNk1fTNBk)
 - [데모 영상(Car-Palate Detecting)](https://youtu.be/HMHXc5TUf6s)
 - [프로젝트 repository](https://github.com/hwanseok-dev/opencv_toy_projects)
-
----  
-
-# opencv_toy_projects
-
-Python OpenCV toy projects
 
 ## Obecjt-Tracking
 
