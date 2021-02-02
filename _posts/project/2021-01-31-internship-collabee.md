@@ -13,7 +13,7 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
-### 요약
+# 요약
 - 2020.09.06 ~ 2020.12.18
 - 개발팀, 풀스텍 인턴
 - 콜라비 서비스 백오피스 고도화
