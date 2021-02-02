@@ -26,7 +26,6 @@ toc_sticky: true
 - [컨트리뷰톤 수료 증명서](/assets/images/about/certification_nnstreamer.pdf)
 - [MVP(팀 내 최우수 컨트리뷰터)선정](/assets/images/about/certification_nnstreamer_mvp.pdf)
 - [최종 발표영상(발표자)](https://youtu.be/_lkvKkdZAZo)
-- [컨트리뷰톤 리뷰](https://hwanseok-dev.github.io/project/nnstreamer)  
 
 ---  
 

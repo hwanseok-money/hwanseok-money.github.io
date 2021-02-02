@@ -18,12 +18,9 @@ toc_sticky: true
 - 개발팀, 풀스텍 인턴
 - 콜라비 서비스 백오피스 고도화
 - java, spring-boot, mysql, mybatis, git, Mac OS
-- [인턴쉽 리뷰](https://hwanseok-dev.github.io/project/internship-collabee)
 - [인턴 수료 증명서](/assets/images/about/certification_internship_collabee.pdf)
 
----  
-
-# 직무 요약  
+# 직무  
 
 콜라비 서비스의 백오피스 고도화를 위한 전반적인 업무를 진행했습니다. 요구사항 수집, batabase 설계, backend api 설계 및 개발 그리고 frontend 화면 설계 및 개발까지 모두 진행했습니다.  
 

@@ -21,7 +21,6 @@ classes: wide
   - 항공사 재배치 대안 평가에 5%의 영향력을 미침
 - MATLAB, Big Data analysis
 - [프로젝트 repository](https://github.com/hwanseok-dev/Incheon_airport_relocation)
-- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Incheon-Airport/)
 - [연구 참여 확인서](/assets/images/about/certification_research_participation.pdf)
 
 ---  

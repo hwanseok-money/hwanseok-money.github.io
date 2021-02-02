@@ -13,18 +13,15 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
-### 요약
+## 요약
 - 2020.01.06 ~ 2020.02.28
 - 동영상기술1개발팀, 백엔드 인턴
 - RTMP Relay Server 개발
 - c++, socket programming, multi thread, git, RTMP, FLV, AMF3, ubuntu18.04
-- [인턴쉽 리뷰](https://hwanseok-dev.github.io/project/internship-naver)
 - [인턴 수료 증명서](/assets/images/about/certification_internship_naver.pdf)
 
----  
 
-
-[RTMP Relay Server]
+## RTMP Relay Server
 	1) 진행기간	: 2020-01-06 ~ 2020-02-29(인턴쉽, NAVER)
 	2) 주요내용 : 미디어 서버의 공인 IP 할당 비용 감소를 위한 Proxy Server를 설계 및 개발했습니다. RTMP Relay server는 multimedia publisher로부터 데이터를 받아서 media server로 relay하는 proxy server의 역할을 수행합니다. 가장 기본적인 stream은 publisher와 media server 각각에 대한 세션을 하나씩 가집니다. 이와 같은 경우를 1 대 1 stream이라고 할 때, 서버는 N개의 1 대 M 스트림을 관리해야 합니다. 한 명의 publisher가 M 개의 media server로 패킷을 보내고, 이와 같은 stream을 N개 관리할 수 있어야 합니다.
 	3) 새로운 분야 : c++ 기반 멀티 쓰레드 구조의 서버를 직접 설계했습니다. 서버 설계에 대한 경험이 없었지만, 기존의 RTMP Relay Server는 다양한 요구사항에 대응하는데 한계가 있었기 때문에 변화가 필요했습니다.  설계 뿐만 아니라 Protocol 기반의 개발과 서버의 성능 측정 부분도 낯선 분야였습니다. 

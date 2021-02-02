@@ -25,7 +25,6 @@ classes: wide
 - [데모 영상(Obecjt-Tracking)](https://youtu.be/QpcNk1fTNBk)
 - [데모 영상(Car-Palate Detecting)](https://youtu.be/HMHXc5TUf6s)
 - [프로젝트 repository](https://github.com/hwanseok-dev/opencv_toy_projects)
-- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/OpenCV-Toy-Projects/)
 
 ---  
 

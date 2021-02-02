@@ -24,7 +24,6 @@ classes: wide
 - c++, ROS, raspberry pi 3
 - [데모 영상](https://youtu.be/i-6bfpRTpEc)
 - [프로젝트 repository](https://github.com/hwanseok-dev/path_planning)
-- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Roomba-PDDL-Driver/)
 
 ---  
 

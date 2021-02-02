@@ -23,7 +23,6 @@ classes: wide
 - python, simulation, modeling
 - [데모 영상](https://youtu.be/EXxjnZ303Zo)
 - [프로젝트 repository](https://github.com/hwanseok-dev/kicking_out_wildboar)
-- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Kicking-Out-Wildboar/)
 
 ---  
 
