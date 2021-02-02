@@ -1,6 +1,6 @@
 ---
 title: "[프로젝트] 인천공항 제 2 터미널 재배치 대안 평가"
-excerpt: "2019.2.1~2019.2.28"
+excerpt: "2019.02.01. ~ 2019.02.28"
 date: 2019-07-28
 categories:
   - Project
@@ -12,6 +12,19 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 classes: wide  
 ---
+
+### 요약
+- 2019.02.01. ~ 2019.02.28
+- 개인 프로젝트
+- 기여
+  - 2018년 인천공항을 이용한 8000만 승객의 데이터를 기반으로 2028년 면세점 매출 예상
+  - 항공사 재배치 대안 평가에 5%의 영향력을 미침
+- MATLAB, Big Data analysis
+- [프로젝트 repository](https://github.com/hwanseok-dev/Incheon_airport_relocation)
+- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Incheon-Airport/)
+- [연구 참여 확인서](/assets/images/about/certification_research_participation.pdf)
+
+---  
 
 ## 프로젝트 설명
 
@@ -66,3 +79,7 @@ dataToResult : textToData의 자료를 Alliance별로 추리는 코드
 1. Win10
 2. MATLAB
 3. EXCEL
+
+**Success Notice:**  
+감사합니다! :+1:
+{: .notice--success}

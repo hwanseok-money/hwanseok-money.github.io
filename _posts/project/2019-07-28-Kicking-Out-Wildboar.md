@@ -1,6 +1,6 @@
 ---
 title: "[프로젝트] 멧돼지 퇴치 시뮬레이션"
-excerpt: "2019.3. ~ 2019.6."
+excerpt: "2019.03.01. ~ 2019.06.30"
 date: 2019-07-28
 categories:
   - Project
@@ -14,6 +14,18 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 classes: wide  
 ---
+
+### 요약
+- 2019.03.01. ~ 2019.06.30
+- 개인 프로젝트
+- 기여
+  - 멧돼지에 의한 고구마밭 피해를 최소화하기 위해, 시뮬레이션 모델링 제안
+- python, simulation, modeling
+- [데모 영상](https://youtu.be/EXxjnZ303Zo)
+- [프로젝트 repository](https://github.com/hwanseok-dev/kicking_out_wildboar)
+- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Kicking-Out-Wildboar/)
+
+---  
 
 ## 프로젝트 설명 
 
@@ -38,3 +50,7 @@ classes: wide
 Win10  
 Python 3.6.8 :: Anaconda  
 Matplotlib  
+
+**Success Notice:**  
+감사합니다! :+1:
+{: .notice--success}

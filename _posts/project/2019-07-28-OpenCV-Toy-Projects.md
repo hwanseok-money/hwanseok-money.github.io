@@ -1,6 +1,6 @@
 ---
-title: "[프로젝트] OpenCV Toy Projects"
-excerpt: "2019.3. ~ 2019.6."
+title: "[프로젝트] 주차장 내 자차 위치 찾기"
+excerpt: "2019.03.01. ~ 2019.06.30"
 date: 2019-07-28
 categories:
   - Project
@@ -14,6 +14,20 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 classes: wide  
 ---
+
+### 요약
+- 2019.03.01. ~ 2019.06.30
+- 개인 프로젝트
+- 기여
+  - Obecjt-Tracking 기능 개발
+  - Car-Palate Detecting 기능 개발
+- python, opencv
+- [데모 영상(Obecjt-Tracking)](https://youtu.be/QpcNk1fTNBk)
+- [데모 영상(Car-Palate Detecting)](https://youtu.be/HMHXc5TUf6s)
+- [프로젝트 repository](https://github.com/hwanseok-dev/opencv_toy_projects)
+- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/OpenCV-Toy-Projects/)
+
+---  
 
 # opencv_toy_projects
 
@@ -52,3 +66,7 @@ Repo : <https://github.com/niklasjang/opencv_toy_projects>
 Win10  
 Python 3.6.8 :: Anaconda  
 OpenCV  
+
+**Success Notice:**  
+감사합니다! :+1:
+{: .notice--success}

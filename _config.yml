@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "HwanSeok"
-  avatar           : "/assets/images/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile-graduate.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hwanseok Jang.  Greate honour to graduate from the Korea Aerospace Univ. Write Code. Solve Problem"
   location         : "South Korea/Seoul"
   email            : "hwanseok-dev@gmail.com"

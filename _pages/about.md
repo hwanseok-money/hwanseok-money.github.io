@@ -62,6 +62,7 @@ toc_sticky: false
 - 콜라비 서비스 백오피스 고도화
 - java, spring-boot, mysql, mybatis, git, Mac OS
 - [인턴쉽 리뷰](https://hwanseok-dev.github.io/project/internship-collabee)
+- [인턴쉽 리뷰](/project/internship-collabee)
 - [인턴 수료 증명서](/assets/images/about/certification_internship_collabee.pdf)
 
 ## 네이버

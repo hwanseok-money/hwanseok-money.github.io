@@ -1,6 +1,6 @@
 ---
 title: "[프로젝트] 룸바  A* & PDDL 드라이버"
-excerpt: "2019.3. ~ 2019.6."
+excerpt: "2019.03.01. ~ 2019.06.30"
 date: 2019-07-28
 categories:
   - Project
@@ -15,6 +15,18 @@ toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 classes: wide  
 ---
+
+### 요약
+- 2019.03.01. ~ 2019.06.30
+- 팀 프로젝트
+- 기여
+  - 격자 공간에서 다수의 로봇들의 서로 충돌하지 않고, 각자의 목표 위치로 이동하기 위한 서버 개발
+- c++, ROS, raspberry pi 3
+- [데모 영상](https://youtu.be/i-6bfpRTpEc)
+- [프로젝트 repository](https://github.com/hwanseok-dev/path_planning)
+- [프로젝트 리뷰](https://hwanseok-dev.github.io/project/Roomba-PDDL-Driver/)
+
+---  
 
 ## 프로젝트 설명
 
@@ -70,3 +82,7 @@ Irobot create 2(https://www.irobot.com/about-irobot/stem/create-2)
 
 통합개발환경  
 Sublimetext  
+
+**Success Notice:**  
+감사합니다! :+1:
+{: .notice--success}
