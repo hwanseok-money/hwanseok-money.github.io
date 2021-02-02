@@ -8,28 +8,123 @@ header:
   overlay_image: /assets/images/about/background.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
 classes: wide
-toc : true
-toc_label: "Table of contents"
-toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+# toc : true
+# toc_label: "Table of contents"
+# toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
+# toc_sticky: true
 ---
 
-## [장환석이 개발자가 된 이유]  
-1. 진행기간	: 2017-03-01 ~  현재  
-2. 주요내용 : 인류의 불편함을 해소시키는 개발자가 되는 것이 궁극적인 목표입니다. 추상적인 목표이기 때문에 새롭게 접해온 모든 지식들이 소중했고 필요했습니다. 부족한 부분을 찾아서 공부하고 저만의 경쟁력으로 바꾸는 과정을 지속해왔습니다.   
-이론적 지식뿐만 아니라 실무적인 경험도 두루 갖추고 싶었습니다. 저는 대학 재학 동안 `경인지역 대학연합 프로그래밍 대회`, `인천공항공사 재배치 사업`, `산학연계 강의`, `오픈소스 컨트리뷰톤`, `기업 인턴십` 등에 꾸준히 참여하였습니다. 개발이 재밌음을 알고 시작한 공부였기 때문에 다양한 분야의 사람들과의 만남은 항상 즐거움의 연속이었습니다. 탄탄한 Computer Science 이론을 기반으로 실무적인 경험을 쌓은 덕분에 어떤 요구사항과 문제라도 잘 해결할 수 있다는 자신감을 얻게 되었습니다.  
-3. 프로젝트 정리 : <https://hwanseok-dev.github.io/categories/#project>  
-4. 졸업 이후 Github : <https://github.com/hwanseok-dev>
-5. 졸업 이전 Github : <https://github.com/niklasjang>  
+# 소개
+인류의 불편함을 해소시키는 개발자가 되는 것이 궁극적인 목표입니다. 추상적인 목표이기 때문에 새롭게 접해온 모든 지식들이 소중했고 필요했습니다. <u>스스로 부족한 부분을 찾아서 공부하고 저만의 경쟁력으로 바꾸는 과정을 지속해왔습니다.</u>  
 
-[네이버 인턴 수료 증명서](/assets/images/about/네이버 인턴수행 증명서 장환석.pdf) 
+이론적 지식뿐만 아니라 실무적인 경험도 두루 갖추고 싶었습니다. 대학 재학 동안 **기업 인턴십**, **오픈소스 컨트리뷰톤**, **경인지역 대학연합 프로그래밍 대회**, **인천공항공사 재배치 사업**, **산학연계 강의** 등에 꾸준히 참여하였습니다. 개발이 재밌음을 알고 시작한 공부였기 때문에 다양한 분야의 사람들과의 만남은 항상 즐거움의 연속이었습니다.  
 
-## [이해하고 기록하고 공유하는 공간, 블로그]
-1. 진행기간	: 2017-03-01 ~  현재
-2. 주요내용 : Computer Science 이론, 알고리즘 문제풀이 그리고 프로젝트 진행과정에 대한 포스팅을 다루고 있습니다. 저에게 블로그는 전공지식을 기록하고, 공유하고, 부족한 점을 스스로 발견하게 되는 공간입니다. 강의와 책으로 배운 내용을 재구성하는 과정에서 잘못 이해한 내용을 바로 잡고, 이미 알고 있었던 내용과 연결시켜 이해를 확장합니다.
-3. 블로그 : <https://hwanseok-dev.github.io/categories/>
+탄탄한 Computer Science 이론을 기반으로 실무적인 경험을 쌓은 덕분에 어떤 요구사항과 문제라도 잘 해결할 수 있다는 자신감을 얻게 되었습니다.  
 
-## [게임보다 재밌는 알고리즘 문제 풀이]
+# 신상
+
+- 이름
+  - 장환석 (HwanSeok Jang)
+- 생년월일
+  - 1995.12.26
+- 이메일
+  - <mailto:hwanseok.dev@gmail.com>
+- 병역
+  - 공군 병장 만기제대 (2015.1.19. ~ 2017.1.18.)
+- 웹 사이트
+  - <https://hwanseok-dev.github.io/>
+
+# 학력
+
+## 한국항공대학교
+- 소프트웨어학과
+  - 2017.03 ~ 2021.02
+  - [4.21/4.5](/assets/images/about/transcript_kau.pdf)
+
+## 소래고등학교
+- 수학을 사랑했던 문과
+  - 2011.03 ~ 2014.02
+
+# 기술
+
+- c++, socket programming, multi thread, vscode, visual studio
+- java, spring, spring-boot, elipse
+- python, django, pycharm
+- javascript, react, webstorm
+- mysql, postgresql, mybatis, dbeaver
+- git, github, gitkraken, slack 
+
+# 경력
+
+## 콜라비팀
+- 2020.09.06 ~ 2021.12.18
+- 개발팀, 풀스텍 인턴
+- 콜라비 서비스 백오피스 고도화
+- [인턴 수료 증명서](/assets/images/about/certification_internship_collabee.pdf)
+- java, spring-boot, mysql, mybatis, git
+- [인턴쉽 리뷰]
+
+## 네이버
+- 2020.01.06 ~ 2020.02.28
+- 동영상기술1개발팀, 백엔드 인턴
+- RTMP Relay Server 개발
+- [인턴 수료 증명서](/assets/images/about/certification_internship_naver.pdf)
+- c++, socket programming, multi thread, git
+- [인턴쉽 리뷰]
+
+# 활동
+
+## 공개SW 컨트리뷰톤
+- 2019.9.7. ~ 2019.10.19.
+- [NNStreamer](https://github.com/nnstreamer/nnstreamer) 오픈 소스 프로젝트에 참여
+- 기여
+  1. [tensorflow-light의 image segmentation model filter 개발](https://github.com/nnstreamer/nnstreamer/pull/1801)
+  2. [tensorflow-light의 style transfer model filter pipeline design 제안](https://github.com/wooksong/contributon2019-nns/issues/8)
+  2. tensorflow-light의 style transfer model과 NNStreammer 사이의 버전 호환성 문제 발견 및 리포트
+- [컨트리뷰터 커밋 내역](https://github.com/nnstreamer/nnstreamer/commits?author=niklasjang)
+- [멘토링 repository](https://github.com/hwanseok-dev/contributon2019-nns)
+- [컨트리뷰톤 수료 증명서](/assets/images/about/certification_nnstreamer.pdf)
+- [MVP(팀 내 최우수 컨트리뷰터)선정](/assets/images/about/certification_nnstreamer_mvp.pdf)
+- [최종 발표영상(발표자)](https://youtu.be/_lkvKkdZAZo)
+- c, gstreamer, tensorflow, git
+- [컨트리뷰톤 리뷰]
+
+## 개인 기술 블로그 운영
+- 주제
+  1. Computer Science 이론
+  1. 알고리즘 문제풀이
+  1. 프로젝트 진행과정
+- 목적
+  1. 전공지식을 기록하고, 공유하고, 부족한 점을 스스로 발견하게 되는 공간
+  2. 강의와 책으로 배운 내용을 재구성하는 과정에서 잘못 이해한 내용을 바로 잡고, 이미 알고 있었던 내용과 연결시켜 이해를 확장
+- 주소 
+  - <https://hwanseok-dev.github.io/categories/>
+
+# 프로젝트 
+
+## 룸바 A* & PDDL 드라이버
+- 2019.03.01. ~ 2019.06.30
+- 팀 프로젝트
+- 기여
+  - 기여도 상
+  - 격자 공간에서 다수의 로봇들의 서로 충돌하지 않고 각자의 목표 위치로 이동하기 위한 서버 개발
+- c++, ROS, raspberry pi 3
+- [프로젝트 repository](https://github.com/hwanseok-dev/path_planning)
+- [프로젝트 리뷰]
+
+## 주차장 내 자차 위치 찾기
+- 2019.03.01. ~ 2019.06.30
+- 개인 프로젝트
+- Obecjt-Tracking
+- Car-Palate Detecting
+- python, opencv
+- [프로젝트 리뷰]
+
+## 멧돼지 퇴치 시뮬레이션
+- 2019.03.01. ~ 2019.06.30
+## 인천공항 제 2 터미널 재배치 대안 평가
+
+[게임보다 재밌는 알고리즘 문제 풀이]
 1. 진행기간	: 2019-03-01 ~  현재
 2. 주요내용 : 프로그래밍을 공부하기 전에는 가장 재미있는 과목이 수학이었습니다. 문제해결기법을 키우는 과정은 수학적 수식을 세운 뒤에 또 한 번의 논리적인 설계가 필요하다는 측면에서 가장 재미있는 공부라고 생각합니다. 자전거를 타는 방법을 까먹지 않듯이, 문제를 이해하고 직접 코드를 짜본 뒤에는 잘 까먹지 않는 점에서 현실에서의 레벨업을 한다는 느낌을 받아왔습니다. 2019년에는 경인지역 대학생 프로그래밍 대회 Shake에서 학교 대표로 선발되기도 했습니다. 비록 본선에서 수상은 하지 못했지만 생각했던 모든 것을 코드로 구현할만큼 구현력이 레벨업 되었다고 느낀 기분 좋은 경험이었습니다. 최근에는 좋은 문제와 좋은 코드를 많이 접하면서 문제해결능력을 기르고 있습니다.  
 3. 연습 기록 : <https://hwanseok-dev.github.io/categories/#algorithm-practice>
@@ -38,7 +133,7 @@ toc_sticky: true
 
 2. 아주 사소한 것이라도 예상치 못한 문제를 해결해본 경험이 있으신가요 ? 그 문제를 해결하기 위해 어떠한 과정(문제 원인 도출, 해결방안 탐색, 해결 방안 적응 등)을 거쳤으며 어떠한 점에서 그 해결책이 효과적이었는지를 기재해주세요.
 
-## [다중 접속을 고려한 안전설계]
+[다중 접속을 고려한 안전설계]
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : 여러 사용자의 DB 관련 요청을 안전하게 수행하는 구조에 대해 고민해본 경험이 있습니다. 저는 사내 백오피스에서 '프리셋 데이터'의 CRUD 기능을 추가하기 위해 Database 설계, Backend API 개발 그리고 Frontend 화면 설계를 진행했었습니다. 그런데 여러 사용자의 요청이 동시에 이루어지는 경우, 같은 데이터가 중복되서 저장되는 문제와 저장된 데이터가 사라지는 문제가 발생했습니다.
 3. 문제원인 도출 : 원인은 동시 접속한 사용자에 대한 대비가 되어있지 않았던 점이었습니다. 
@@ -47,7 +142,7 @@ toc_sticky: true
 6. 결과 : 여러 사용자가 동시에 프리셋 데이터의 CRUD 기능을 문제없이 사용할 수 있었습니다. 
 7. Skill 또는 지식 : React, Typescript, Spring Boot, Mybatis, MySQL
 
-## [누구나 이해할 수 있는 화면설계]
+[누구나 이해할 수 있는 화면설계]
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : 수많은 버튼을 포함하는 페이지의 직관적인 화면 설계에 대해서 고민해본 경험이 있습니다. 제가 개발했던 사내 백오피스의 '프리셋 페이지'는 데이터의 CRUD 기능이 모두 포함된 페이지였습니다. 수 많은 버튼들이 각각의 CRUD 기능을 수행하고 있었고, 3개의 select box를 사용하여 데이터를 조회하는 등 화면구성이 복잡했습니다.     
 3. 문제원인 도출 : 적지 않은 사용자들이 해당 페이지의 사용 방법을 저에게 물어보았습니다. 많은 기능과 복잡한 데이터가 사용되는 페이지였지만 효율적인 화면 설계에 대한 고민이 부족했습니다.    
@@ -56,7 +151,7 @@ toc_sticky: true
 6. 결과 : 개선 후에는 해당 페이지가 제공하는 다양한 기능을 어려움 없이 이용할 수 있었다는 피드백을 받았습니다.    
 7. Skill 또는 지식 : React, Typescript, Spring Boot, Mybatis, MySQL
 
-## [1+N Problem]
+[1+N Problem]
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : Database의 1+N Problem을 해결했던 경험이 있습니다. Company Table에는 회사 정보가 저장되어 있었고, 각각의 company에 특정 Column을 추가해야하는 요구사항이 발생했습니다. 하지만 일부 company 정보에만 Column이 추가되기 때문에 기존의 Company Table을 수정하면 NULL 값이 많이 생기는 문제가 있었습니다. 그래서 저는 별도의 Company_info Table을 만들어서 필요한 정보를 저장했습니다. 그런데 Company Table과 Company_Info Table에 저장된 데이터를 종합해서 excel 파일로 export할 수 있는 기능을 개발했을 때, 응답시간이 비정상적으로 느린 문제를 발견했습니다.
 3. 문제원인 도출 : 문제의 원인은 SQL query log를 통해 파악할 수 있었습니다. Company 정보를 조회한 뒤 Object 타입으로 List에 저장하고, List를 순회하면서 각각의 company.id에 대응되는 company_info를 조회하다보니 1+N Problem이 발생했던 것입니다.
@@ -65,7 +160,7 @@ toc_sticky: true
 6. 결과 : 1+N 번의 쿼리를 1+1번의 쿼리로 축소하여 excel download API의 수행속도를 5초에서 2초로 크게 줄일 수 있었습니다. 
 7. Skill 또는 지식 : Spring Boot, Mybatis, MySQL
 
-## [불필요하게 반복되는 쿼리]
+[불필요하게 반복되는 쿼리]
 1. 진행기간	: 2020-09-06 ~ 2020-12-18(인턴쉽, 콜라비팀)
 2. 문제상황 : on duplicate key update 구문을 사용해서 SQL query를 간소화한 경험이 있습니다. 다양한 API를 개발할 때 이미 저장된 데이터라면 Update를 수행하고, 아니라면 Insert를 수행하는 경우가 많았습니다.
 3. 문제원인 도출 : 데이터를 저장할 때 비슷한 로직이 반복된다는 점을 파악했습니다.
