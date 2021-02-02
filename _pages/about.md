@@ -31,7 +31,7 @@ toc_sticky: false
 | 이메일 | <mailto:hwanseok.dev@gmail.com> |
 | 병역 | 공군 병장 만기제대 (2015.1.19. ~ 2017.1.18.) |
 | 웹 사이트 | <https://hwanseok-dev.github.io/> |  
-  
+| Github | <https://github.com/hwanseok-dev> |
 # 학력
 
 ## 한국항공대학교
