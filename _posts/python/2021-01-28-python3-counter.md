@@ -1,5 +1,5 @@
 ---
-title: "[Python] 각 요소가 등장하는 횟수 쉽게 구하기"
+title: "[Python] Counter, 각 요소가 등장하는 횟수 쉽게 구하기"
 excerpt: "from collections import counter"
 date: 2021-01-28
 last_modified_at:
@@ -19,14 +19,25 @@ toc_sticky: true
 # Counter
 
 ```python
->>> from collections import Counter
->>> Counter('abracadabra').most_common(3)
-[('a', 5), ('b', 2), ('r', 2)]
->>> Counter('abracadabra').most_common()
-[('a', 5), ('b', 2), ('r', 2), ('c', 1), ('d', 1)]
+'''
+10
+1 2 3 4 2 5 3 1 1 2
+'''
+import sys
+from collections import Counter
+
+sys.stdin = open("input.txt", "r")
+n = int(input())
+arr = list(map(int, sys.stdin.readline().split()))
+
+counter = Counter(arr)  # list to Counter object
+print(counter)  # Counter({1: 3, 2: 3, 3: 2, 4: 1, 5: 1})
+counter_list = counter.most_common()  # 등장 횟수가 많은 순서대로 정렬 후 list로 return
+print(counter_list)  # [(1, 3), (2, 3), (3, 2), (4, 1), (5, 1)]
+for x in counter:
+    print(x)  # 1 2 3 4 5
+    print(x in counter)  # True True True True True
 ```  
-
-
 
 # Reference
 
