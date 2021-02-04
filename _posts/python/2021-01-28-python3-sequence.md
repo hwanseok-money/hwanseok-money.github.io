@@ -1,6 +1,6 @@
 ---
-title: "[Python] PS Python으로 시작할 때 알아야할 사항들"
-excerpt: "입력, 빠른 입력, 정렬, 배열 생성 등"
+title: "[Python] 쉽게 정리한 배열 생성"
+excerpt: ""
 date: 2021-01-28
 last_modified_at: 
 categories:

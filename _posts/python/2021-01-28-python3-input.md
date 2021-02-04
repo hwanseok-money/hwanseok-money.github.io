@@ -1,5 +1,5 @@
 ---
-title: "[Python] 다양한 파일 입력 받기"
+title: "[Python] 쉽게 정리한 입력"
 excerpt: "input(), sys.stdin.read(), sys.stdin.readline()"
 date: 2021-01-23
 last_modified_at: 2021-01-28

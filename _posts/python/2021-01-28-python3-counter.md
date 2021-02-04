@@ -7,9 +7,7 @@ categories:
   - Python
 tags:
   - Python
-  - IO
-  - FastIO
-  - C++
+  - Counter
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)

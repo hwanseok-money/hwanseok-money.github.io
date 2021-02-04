@@ -1,6 +1,6 @@
 ---
-title: "[Python] 다양한 정렬 방법"
-excerpt: ""
+title: "[Python] 쉽게 정리한 객체Object"
+excerpt: "Fluent Python 8장"
 date: 2021-01-28
 last_modified_at: 
 categories:
@@ -103,14 +103,14 @@ b = list(a)
 a.append(100)
 # a와 b가 모두 참조하고 있는 메모리에서 삭제된다.
 a[1].remove(2)
-print('a:', a)
-print('b:', b)
 # b[1]는 가별 시퀀스이기 때문에 a와 b가 모두 참조하고 있는 메모리에서 삭제된다.
-b[1] += [2,22]
+print('a:', a)  # [1, [], (3,), 100]
+print('b:', b)  # [1, [], (3,)]
+b[1] += [2, 22]
 # b[2]는 불변 시퀀스이기 때문에 새로운 튜플이 생성되고 이 메모리를 b만 참조하게 된다.
-b[2] += (33,333)
-print('a:', a)
-print('b:', b)
+b[2] += (33, 333)
+print('a:', a)  # [1, [2, 22], (3,), 100]
+print('b:', b)  # [1, [2, 22], (3, 33, 333)]
 ```  
 
 얕은 복사는 import copy 이후 copy()를 사용하고, 깊은 복사는 from copy import deepcopy 이후 deepcopy()를 사용합니다. 사용 예시는 docs를 참조합니다.  
@@ -179,9 +179,9 @@ class Bus:
         if passengers is None:
             self.passengers = []
         else :
-            # 전달받은 passengers의 값을 변경할 위험성!
+            # 전달받은 passengers의 값을 변경할 위험성에 주의!
             # self.passengers = passengers
-            # list 생성사로 얕은 복사만을 해도 되는 경우
+            # list 생성사로 얕은 복사만을 해도 되는 경우만 아래와 같이 합니다. 
             self.passengers = list(passengers)
 
     def pick(self, name):

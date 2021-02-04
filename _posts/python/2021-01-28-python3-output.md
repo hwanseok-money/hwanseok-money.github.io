@@ -1,5 +1,5 @@
 ---
-title: "[Python] 다양한 출력 방법"
+title: "[Python] 쉽게 정리한 출력"
 excerpt: "print의 형식 지정 세 가지 방법"
 date: 2021-01-23
 last_modified_at: 2021-01-28

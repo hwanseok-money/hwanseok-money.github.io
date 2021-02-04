@@ -1,5 +1,5 @@
 ---
-title: "[Python] 다양한 정렬 방법"
+title: "[Python] 쉽게 정리한 정렬"
 excerpt: ""
 date: 2021-01-28
 last_modified_at: 
