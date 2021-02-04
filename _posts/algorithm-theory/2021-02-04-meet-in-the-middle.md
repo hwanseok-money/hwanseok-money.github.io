@@ -9,8 +9,8 @@ tags:
   - Algorithm-Theory
   - Practice
   - meet in the middle
-  - 9985
-  - Missing Piece 2001
+  - "9985"
+  - "Missing Piece 2001"
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
