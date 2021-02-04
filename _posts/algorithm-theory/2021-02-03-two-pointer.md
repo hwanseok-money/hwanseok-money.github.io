@@ -4,9 +4,9 @@ excerpt: ""
 date: 2021-02-03
 last_modified_at:
 categories:
-  - Algorithm-Practice
+  - Algorithm-Theory
 tags:
-  - Algorithm-Practice
+  - Algorithm-Theory
   - Practice
   - 투 포인터
 toc_label: "Table of contents"

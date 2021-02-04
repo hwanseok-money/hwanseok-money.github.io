@@ -4,9 +4,9 @@ excerpt: "BOJ 9985 Missing Piece 2001 풀이를 중심으로"
 date: 2021-02-03
 last_modified_at:
 categories:
-  - Algorithm-Practice
+  - Algorithm-Theory
 tags:
-  - Algorithm-Practice
+  - Algorithm-Theory
   - Practice
   - meet in the middle
   - 9985
