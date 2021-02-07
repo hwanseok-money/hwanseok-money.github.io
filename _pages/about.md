@@ -102,14 +102,27 @@ toc_sticky: false
 
 # 프로젝트 
 
-## the-insta[진행 중]
-- 2021.01.25 ~ 현재
+## the-fast[진행 중]
+- 2021.02.04 ~ 현재
+- 개인 프로젝트
+- 목표
+  - 위치 기반 직업 정보 공유 서비스
+  - 주변에서 특정 직업, 정보, 경험을 가진 사람을 찾아서 상담할 수 있는 플랫폼
+  - ex1 ) [멘토] AA 대학 BB 학과 재학/졸업생입니다. 고등학생 대상 멘토링해드립니다.
+  - ex2 ) [멘티] CC에서 DD 업무 해보신 분을 찾습니다.
+- 기여
+  - 백오피스 기능 개발 진행 중
+- python, django, javascript, react, postgresql
+- [프로젝트 repository](https://github.com/hwanseok-dev/the-fast#pivoting)
+
+## the-insta
+- 2021.01.25 ~ 2021.02.02
 - 개인 프로젝트
 - 기여
-  - Todo List CRUD 기능 개발 완료
-  - 위치 기반 직업 상담 서비스로 pivot 진행 중
+  - Todo List CRUD 기능
+  - django와 react의 연동 과정 파악
 - python, django, javascript, react, postgresql
-- [프로젝트 repository](https://github.com/hwanseok-dev/the-insta)
+- [프로젝트 repository](https://github.com/hwanseok-dev/the-insta#the-insta)
 
 
 ## Django 기반 질의응답 게시판
