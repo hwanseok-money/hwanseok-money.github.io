@@ -2,7 +2,7 @@
 title: "[Python] 쉽게 정리한 파이썬이 동작하는 원리"
 excerpt: "build, compile, link, RPython, CPython 그리고 PyPy"
 date: 2021-01-28
-last_modified_at:
+last_modified_at: 2021-02-09
 categories:
   - Python
 tags:
@@ -26,6 +26,31 @@ toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
+
+# kennethreitz
+
+제 포스팅을 보기 전에 CPython와 pypy에 대한 kennethreitz님의 포스팅을 먼저 읽는 것이 좋습니다.  
+
+- [kennethreitz?](https://kennethreitz.org/)  
+- [CPython vs pypy](https://python-guide-kr.readthedocs.io/ko/latest/starting/which-python.html#implementations)  
+
+## CPython  
+
+CPython 은 C로 작성된 파이썬 구현의 리퍼런스로서, 파이썬 코드를 가상 머신에 의해 해석되는 중간 바이트코드로 컴파일합니다. CPython은 파이썬 패키지와 C언어의 확장 모듈간에 최고 레벨의 호환성을 제공합니다.
+
+오픈 소스 파이썬 코드를 작성 중이고 폭넓은 사용자 기반을 갖고 싶다면 CPython이 최고입니다. C언어 확장 기능을 쓰는 패키지를 사용하려면 CPython이 유일한 구현 방법입니다.
+
+파이선 언어의 모든 버전은 C언어로 구현됩니다. CPython이 파이썬 구현의 리퍼런스이기 때문입니다.
+
+## PyPy  
+
+PyPy 는 파이썬 언어의 정적 타입으로만 구현된 파이썬 인터프리터로서 통칭 RPython이라 불립니다. 이 인터프리터의 특징은 just-in-time 컴파일러와 복수의 백엔드(C, CLI, JVM)를 지원한다는 것입니다.
+
+PyPy의 목표는 파이썬의 리퍼런스 구현 방법인 CPython과 최대한의 호환성을 유지하는 동시에 그 성능을 향상시키는 것입니다.
+
+만약 파이썬 코드의 성능을 향상시키고자 한다면, PyPy은 한 번 써볼만한 가치가 있습니다. 벤치마크에서 PyPy는 CPython보다 5배나 빨랐습니다.
+
+PyPy는 파이썬2.7을 지원합니다. 베타로 나온 PyPy3 [1],는 파이썬3를 지원합니다.
 
 # Build, Compile, Link
 
