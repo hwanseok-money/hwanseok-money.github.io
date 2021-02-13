@@ -107,7 +107,7 @@ Browser는 서버의 응답 Response Header에서 `access-control-allow-origin: 
 아래의 설정은 `fetch('/api/me');`의 요청에 대해서 `localhost:8000/api/me`로 요청을 보내는 것으로 Browser를 속이고, webpack이 뒤에서 `https://api.evan.com/api/me`으로 요청을 보내줍니다. 즉, Proxy 설정을 통해서 CORS 정책을 우회하는 것입니다.  
 
 ```javascript
-module.exports = {
+module. s = {
   devServer: {
     proxy: {
       '/api': {
