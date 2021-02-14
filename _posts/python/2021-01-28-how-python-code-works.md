@@ -80,8 +80,7 @@ CPython과 PyPy는 모두 Python 구현체입니다. 여기서 `구현체`라는
 
 CPython is the reference implementation of the Python programming language. Written in C and Python, CPython is the default and most widely used implementation of the language. **CPython can be defined as both an interpreter and a compiler as it compiles Python code into bytecode before interpreting it.**  
 
-CPython은 Python Code를 bytecode로 컴파일 한 뒤, interpreting하기 때문에 commpiler이자 interpreter입니다.  
-
+CPython은 python code를 먼저 bytecode로 변환한 뒤, interpreting을 진행합니다. 따라서 CPython은 compiler의 역할과 interpreter의 역할을 모두 수행합니다.  
 
 ## RPython
 
