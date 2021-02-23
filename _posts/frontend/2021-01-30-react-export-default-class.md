@@ -4,9 +4,10 @@ excerpt: ""
 date: 2021-01-30
 last_modified_at: 
 categories:
-  - RoadMap
+  - Frontend
 tags:
-  - RoadMap 
+  - Frontend 
+  - React
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
