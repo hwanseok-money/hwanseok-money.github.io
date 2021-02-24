@@ -1,7 +1,7 @@
 ---
 title: "[Java] 자료구조"
-excerpt: "List, ArrayList, "
-date: 2020-07-26
+excerpt: "List, Set, Hash, Tree etc"
+date: 2021-02-24
 categories:
   - Java
 tags:
