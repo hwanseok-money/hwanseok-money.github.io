@@ -14,7 +14,7 @@ toc_sticky: true
 classes: wide
 ---
 
-intellj idea에서 local mysql server 연결하는 방법  
+# intellj idea에서 local mysql server 연결하는 방법  
 
 
 ![intellj-idea-mysql-0](/assets/images/mysql/intellj-idea-mysql-0.jpg)  

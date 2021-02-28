@@ -131,7 +131,7 @@ public interface AcademyRepository extends JpaRepository<Academy, Long> {
 
 ## WIP
 
-inner join과 outer join을 정리한 뒤 포스팅을 계속합니다.  
+inner join과 outer join을 정리한 뒤 포스팅을 계속합니다.   
 
 # Reference
 
