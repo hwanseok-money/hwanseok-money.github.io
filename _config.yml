@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "HwanSeok's Archive"
+title                    : "부자 환석"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "HwanSeok"
 description              : "Consistency makes genius"
-url                      : "https://hwanseok-dev.github.io" # the base hostname & protocol for your site e.g. 
+url                      : "https://hwanseok-money.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
-repository               : "hwanseok-dev/hwanseok-dev.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "hwanseok-dev/hwanseok-money.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/favicon_io/android-chrome-192x192.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -97,17 +97,11 @@ author:
   avatar           : "/assets/images/profile-graduate.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Hwanseok Jang.  Greate honour to graduate from the Korea Aerospace Univ. Write Code. Solve Problem"
   location         : "South Korea/Seoul"
-  email            : "hwanseok-dev@gmail.com"
+  email            : "hwanseok-money@gmail.com"
   links:
-    - label: "GitHub(2021~)"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/hwanseok-dev
-    - label: "GitHub(~2020)"
-      icon: "fab fa-fw fa-github"
-      url: https://github.com/niklasjang
-    - label: "Project"
-      icon: "fas fa-fw fa-bookmark"
-      url: "https://hwanseok-dev.github.io/categories/#project"
+      url: https://github.com/hwanseok-money
     # - label: "Email"
     #   icon: "fas fa-fw fa-envelope-square"
     #   url: "mailto:hwanseok-dev@gmail.com"
