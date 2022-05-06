@@ -3,7 +3,7 @@ title: "[금리 두번째 이야기] 기준금리는 앞으로 얼마나 오를�
 excerpt: "현재와 미래의 인플레이션 알아보기"
 date: 2022-05-05
 categories:
-  - Book
+  - Economy
 tags:
   - 금리
   - 명목금리
@@ -13,8 +13,9 @@ tags:
   - 현재인플레이션
   - 기대인플레이션
   - 미국채10년물수익률
-  - 최근10년미국소비자물가지수(전월대비,전년대비)
-  - 최근1년,10년미국채수익률 
+  - 미국채2년물수익률
+  - 미국채3개월물수익률
+  - 최근10년미국소비자물가지수
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
@@ -133,7 +134,7 @@ toc_sticky: true
 [2]: https://fred.stlouisfed.org/graph/?g=OVIv
 <!-- 최근 10년 미국 소비자 물가 지수(전월대비, 전년대비) -->
 [3]: https://fred.stlouisfed.org/graph/fredgraph.png?g=OW0B
-[4]: https://fred.stlouisfed.org/graph/?g=OW0B
+[4]: htt ps://fred.stlouisfed.org/graph/?g=OW0B
 <!-- 최근 1년, 10년 미국채 수익률 -->
 [5]: https://fred.stlouisfed.org/graph/fredgraph.png?g=OVR0
 [6]: https://fred.stlouisfed.org/graph/?g=OVR0

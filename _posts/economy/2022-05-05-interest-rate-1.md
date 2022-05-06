@@ -3,7 +3,7 @@ title: "[금리 첫번째 이야기] 금리 인상의 필수 조건"
 excerpt: "금리 인상을 하는 이유와 전제 조건"
 date: 2022-05-05
 categories:
-  - Book
+  - Economy
 tags:
   - 물가
   - 임금

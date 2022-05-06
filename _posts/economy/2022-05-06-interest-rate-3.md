@@ -1,19 +1,27 @@
 ---
 title: "[금리 세번째 이야기] 금리의 영향력"
-excerpt: ""
+excerpt: "미국 기준금리가 0.5%p가 올랐습니다. 어떤 영향이 있을까요?"
 date: 2022-05-06
 categories:
-  - Book
+  - Economy
 tags:
   - 금리
-  - 명목금리
-  - 실질금리
-  - 인플레이션
-  - 물가상승률
-  - 현재인플레이션
-  - 기대인플레이션
-  - 미국채10년물수익률
-  - 최근10년미국소비자물가지수
+  - 기준금리하락
+  - 0.5%p
+  - 유동성
+  - 자산버블
+  - 통화승수
+  - M2
+  - M0
+  - MB
+  - MonetaryBase
+  - 장단기금리차
+  - 역전
+  - 경기침체
+  - 양적긴축
+  - 파월
+  - 연준
+  - 오퍼레이션트위스트
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
