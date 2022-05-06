@@ -10,11 +10,11 @@ tags:
   - 실질금리
   - 인플레이션
   - 물가상승률
-  - 현재 인플레이션
-  - 기대 인플레이션
-  - 미국채 10년물 수익률
-  - 최근 10년 미국 소비자 물가 지수(전월대비, 전년대비)
-  - 최근 1년, 10년 미국채 수익률 
+  - 현재인플레이션
+  - 기대인플레이션
+  - 미국채10년물수익률
+  - 최근10년미국소비자물가지수(전월대비,전년대비)
+  - 최근1년,10년미국채수익률 
 toc : true
 toc_label: "Table of contents"
 toc_icon: "list"  # corresponding Font Awesome icon name (without fa prefix)
