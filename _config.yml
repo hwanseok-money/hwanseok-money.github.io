@@ -90,12 +90,11 @@ analytics:
     tracking_id          : "G-XH9N3GXZN3"
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
   name             : "투읽남"
   avatar           : "/assets/images/profile-graduate.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "투자를 잘하고 싶은 환석"
+  bio              : "투자 읽어주는 남자"
   location         : "South Korea/Seoul"
   email            : "hwanseok-money@gmail.com"
   links:
