@@ -165,6 +165,14 @@ M0 통화량의 증가는 중앙은행이 유동성을 얼마나 빠르게 늘�
 
 변동성이 너무 큰 시장이니 현금 보유를 유지해야겠습니다.  
 
+# 참조
+
+- [돈의 흐름][900]
+- [전인구경제연구소][901]
+
+[900]: http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788950996208&orderClick=LAG&Kc=
+[901]: https://www.youtube.com/c/%EC%A0%84%EC%9D%B8%EA%B5%AC%EA%B2%BD%EC%A0%9C%EC%97%B0%EA%B5%AC%EC%86%8C/featured
+
 <!-- 이전 포스팅 -->
 [1]: ../interest-rate-1
 [2]: ../interest-rate-2

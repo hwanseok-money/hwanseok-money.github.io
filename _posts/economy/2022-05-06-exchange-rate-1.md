@@ -169,6 +169,13 @@ toc_sticky: true
 미국의 기준금리가 움직이면 달러원환율도 움직입니다. 달러원환율이 움직이면 증시가 움직입니다.
 고정 환율 제도를 사용하면 증시의 위험을 최소화할 수 있지만, 조지 소로소와 같은 헤지펀드의 공격에 대응하기 어렵다는 한계가 있습니다. 
 
+# 참조
+
+- [돈의 흐름][900]
+- [전인구경제연구소][901]
+
+[900]: http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788950996208&orderClick=LAG&Kc=
+[901]: https://www.youtube.com/c/%EC%A0%84%EC%9D%B8%EA%B5%AC%EA%B2%BD%EC%A0%9C%EC%97%B0%EA%B5%AC%EC%86%8C/featured
 <!-- 실질실효환율 -->
 [1]: /assets/images/economy/economy-2-real-effective-exchange-rates.jpg
 [2]: https://stats.bis.org/statx/srs/table/i2?m=B

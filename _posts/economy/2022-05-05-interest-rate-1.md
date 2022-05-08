@@ -108,6 +108,14 @@ toc_sticky: true
 
 감사합니다.  
 
+# 참조
+
+- [돈의 흐름][900]
+- [전인구경제연구소][901]
+
+[900]: http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788950996208&orderClick=LAG&Kc=
+[901]: https://www.youtube.com/c/%EC%A0%84%EC%9D%B8%EA%B5%AC%EA%B2%BD%EC%A0%9C%EC%97%B0%EA%B5%AC%EC%86%8C/featured
+
 <!-- 최근 10년 미국 실업률 -->
 [1]: https://fred.stlouisfed.org/graph/fredgraph.png?g=OGsX
 [2]: https://fred.stlouisfed.org/graph/?g=OGsX

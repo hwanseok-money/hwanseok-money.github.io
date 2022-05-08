@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "투읽남 경제 연구소"
+title                    : "투읽남"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "투읽남"
-description              : "계약서를 쓸 때 쫄리면 공부가 덜 된 것"
+description              : "사기 직전에 쫄리면 공부가 덜 된 것"
 url                      : "https://hwanseok-money.github.io" # the base hostname & protocol for your site e.g. 
 baseurl                  : # "/categories" # the subpath of your site, e.g. "/blog"
 repository               : "hwanseok-dev/hwanseok-money.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
